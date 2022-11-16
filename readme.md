@@ -12,6 +12,7 @@ Search, add, and share your favorite movies
 - [ ] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
 - [ ] Create footer
 - [ ] Make search engine work
+- [ ] Light Mode Dark Mode
 
 ### References
 
