@@ -1,0 +1,23 @@
+:root{
+   --family-title: 'Sacramento', cursive;
+   --family-text: 'Quicksand', sans-serif;
+
+   --color1: #C2929D;
+   --color2: #BF0637;
+   --color3: #D9843B;   
+   --black: #23261D;
+   --black-transparent: #23261Dbb;
+   --color1-dark: #223C3F;
+   --color2-dark: #597C7C;
+   --color3-dark: #5B2E70;
+   --white: #F2F2F0;
+   --white-transparent: #F2F2F0bb;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+body{
+   background-image: linear-gradient(180deg, #F2F2F0 0%, #C2929D 175%);
+}
