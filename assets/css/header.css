@@ -13,8 +13,8 @@
    align-items: center;
 }
 
-.header__logo{
-   gap: 4px;
+.header__icons{
+   gap: 16px;
 }
 
 .logo__text{
