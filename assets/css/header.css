@@ -1,0 +1,45 @@
+.header{
+   height: 10vh;
+   background-color: var(--color1);
+   display: flex;
+   justify-content: space-between;
+   padding: 0 1rem;
+}
+
+.header__logo,
+.header__icons{
+   display: flex;
+   height: 100%;
+   align-items: center;
+}
+
+.header__logo{
+   gap: 4px;
+}
+
+.logo__text{
+   font-family: var(--family-title);
+   font-size: var(--size-large);
+   color: var(--color2);
+
+}
+
+.logo__image,
+.icons__icon{
+   height: 40%;
+}
+
+.burger{
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   gap: 25%;
+}
+
+.burger__line{   
+   background-color: var(--color2);
+   height: 2px;   
+   border-radius: 1px;
+   width: 70%;
+   margin: 0 auto;  
+}
