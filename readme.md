@@ -7,7 +7,12 @@ Search, add, and share your favorite movies
 - [X] Define color palette (Caio and Sayonara)
 - [X] Define font family (Caio and Sayonara)
 - [X] Create mobile layout on figma
-- [ ] Create header (Friends, inbox...)
+- [X] Create header
+- [ ] Create user section
+- [ ] Create Card section
+- [ ] Make burger work
+- [ ] Create add film action
+- [ ] Create search action
 - [ ] Search engine (Get information fom OMDB and NY Times. Search based on incomplete information)
 - [ ] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
 - [ ] Create footer
