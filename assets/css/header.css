@@ -3,7 +3,7 @@
    background-color: var(--color1);
    display: flex;
    justify-content: space-between;
-   padding: 0 1rem;
+   padding: 0 var(--side-spacing);
 }
 
 .header__logo,
@@ -14,12 +14,12 @@
 }
 
 .header__icons{
-   gap: 16px;
+   gap: 5vw;
 }
 
 .logo__text{
    font-family: var(--family-title);
-   font-size: var(--size-large);
+   font-size: var(--size-title);
    color: var(--color2);
 
 }
@@ -38,8 +38,8 @@
 
 .burger__line{   
    background-color: var(--color2);
-   height: 2px;   
-   border-radius: 1px;
+   height: 9%;   
+   border-radius: 10px; /*Can I make this variable?*/
    width: 70%;
    margin: 0 auto;  
 }

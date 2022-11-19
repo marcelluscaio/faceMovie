@@ -1,0 +1,24 @@
+.user-field{
+   padding: var(--side-spacing);
+}
+
+.user-field__user{
+   display: flex;
+   align-items: center;
+   gap: .5em;
+}
+
+.user__image{
+   width: 10vw;
+}
+
+.user__name{
+   color: var(--color3);
+   font-size: var(--size-medium);
+   font-weight: 600;
+}
+
+.user-field__controls{
+   padding-top: .5em;
+
+}
