@@ -7,7 +7,7 @@
    --family-text: 'Quicksand', sans-serif;
 
    --size-medium:clamp(.625rem, 2vw, 1rem);
-
+   --size-large:clamp(.875rem, 3vw, 1.5rem);
    --size-title:clamp(1.25rem, 4vw, 2rem);
 
    --color1: #C2929D;

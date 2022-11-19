@@ -20,5 +20,32 @@
 
 .user-field__controls{
    padding-top: .5em;
+   border-bottom: 1px solid var(--color3); /*Can I make this variable?*/
+}
 
+.controls__list{
+   display: flex;
+   font-size: var(--size-large);
+   gap: .5rem;   
+}
+
+.list__text{
+   color: var(--color3);
+   line-height: 1.3;
+}
+
+.controls__list li:last-of-type{
+   margin-left: auto;
+}
+
+.list__image{
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 9.5vw;
+}
+
+.list--active{
+   border-bottom: 1px solid var(--color2);
+   margin-bottom: -1px; /*Gambiarra. Tem solucao mais elegante?*/
 }
