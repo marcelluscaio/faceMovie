@@ -1,0 +1,43 @@
+.card-section{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5vw;
+   padding: 1em var(--side-spacing) 0;
+}
+
+.card-section__card{
+   display: flex;
+   flex-direction: column;
+}
+
+.card__image{
+   width: 18.75vw;
+   height: calc(18.75vw * 3/2);
+   border-radius: calc(18.75vw / 10);
+   border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
+}
+
+.card__information > *{
+   padding-top: .0625rem;
+}
+
+.information__movie{
+   font-size: var(--size-small);
+   color: var(--black);
+   padding-top: .125rem;
+}
+
+.information__director,
+.information__year{
+   font-size: var(--size-tiny);
+   color: var(--black-transparent);
+}
+
+.information__hearts{
+   display: flex;
+   gap: .75vw;
+}
+
+.information__hearts img{
+   height: 2vw;
+}

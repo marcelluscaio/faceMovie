@@ -1,11 +1,14 @@
 @import url('reset.css');
 @import url('header.css');
 @import url('user-field.css');
+@import url('card-section.css');
 
 :root{
    --family-title: 'Sacramento', cursive;
    --family-text: 'Quicksand', sans-serif;
 
+   --size-tiny:clamp(.375rem, 1.2vw, .6rem);
+   --size-small:clamp(.5rem, 1.6vw, .8rem);
    --size-medium:clamp(.625rem, 2vw, 1rem);
    --size-large:clamp(.875rem, 3vw, 1.5rem);
    --size-title:clamp(1.25rem, 4vw, 2rem);

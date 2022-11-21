@@ -1,5 +1,5 @@
 .user-field{
-   padding: var(--side-spacing);
+   padding: 1em var(--side-spacing) 0;
 }
 
 .user-field__user{
