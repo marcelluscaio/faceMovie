@@ -2,6 +2,7 @@
 @import url('header.css');
 @import url('user-field.css');
 @import url('card-section.css');
+@import url('footer.css');
 
 :root{
    --family-title: 'Sacramento', cursive;

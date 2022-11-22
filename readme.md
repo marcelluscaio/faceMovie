@@ -9,7 +9,8 @@ Search, add, and share your favorite movies
 - [X] Create mobile layout on figma
 - [X] Create header
 - [X] Create user section
-- [ ] Create Card section
+- [X] Create Card section
+- [X] Create Footer section
 - [ ] Make burger work
 - [ ] Create add film action
 - [ ] Create search action

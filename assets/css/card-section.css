@@ -2,7 +2,7 @@
    display: flex;
    flex-wrap: wrap;
    gap: 5vw;
-   padding: 1em var(--side-spacing) 0;
+   padding: 1em var(--side-spacing) 1em;
 }
 
 .card-section__card{
