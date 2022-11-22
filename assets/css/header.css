@@ -29,6 +29,11 @@
    height: 40%;
 }
 
+.logo__image > *,
+.icons__icon > *{
+   stroke: var(--color2);
+}
+
 .burger{
    display: flex;
    flex-direction: column;

@@ -1,5 +1,6 @@
 .user-field{
    padding: 1em var(--side-spacing) 0;
+   position: relative;
 }
 
 .user-field__user{
@@ -10,6 +11,15 @@
 
 .user__image{
    width: 10vw;
+}
+
+.user__image__bg{
+   fill: var(--color3);
+}
+
+.user__image__head,
+.user__image__body{
+   fill: var(--color1);
 }
 
 .user__name{
@@ -45,6 +55,14 @@
    width: 9.5vw;
 }
 
+.list__image > * {
+   fill: var(--color3);
+   stroke: var(--color3);
+   r: min(.7vw, 2px);
+   stroke-width: min(0.6vw, 2px);
+}
+
+
 .list--active{
    border-bottom: 1px solid var(--color2);
    margin-bottom: -1px; /*Gambiarra. Tem solucao mais elegante?
@@ -52,3 +70,41 @@
    https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border#:~:text=To%20expand%20the%20bottom%20border,1%20on%20the%20hover%20state.
    */
 }
+
+.switch{
+   display: inline-block;
+   position: absolute;
+   top: 8px;
+   right: var(--side-spacing);
+   background-color: var(--color1);
+
+   border-radius: 10px;
+   width: 30px;
+   height: 20px;
+}
+
+.slider{
+   display: inline-block;
+   border-radius: 50%;
+   background-color: var(--color2);
+   position: relative;
+   top: 50%;
+   left: 1px;
+   transform: translateY(-50%);
+
+   width: 15px;
+   height: 15px;
+   transition: left .5s ease;
+}
+
+.checkbox{
+   position: absolute;
+   height: 0;
+   width: 0;
+   opacity: 0;
+   left: -100%;
+}
+
+.checkbox:checked ~ .switch > .slider{
+  left: 14px;
+} /* Melhorar isso. Deixar nao chumbado */

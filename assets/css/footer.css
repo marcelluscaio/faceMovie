@@ -23,7 +23,7 @@ footer > * {
    color: inherit;
 }
 
-.creator__link::before{
+/* .creator__link::before{
    content: '';
    --size: 1.5em;
    width: var(--size);
@@ -35,6 +35,19 @@ footer > * {
    background-repeat: no-repeat;
    background-size: contain;
    background-position: center;
+} */
+.link__icon{
+   --size: 1.5em;
+   width: var(--size);
+   height: var(--size);
+   position: absolute;
+   left: -3ch;
+   bottom: -.125em;
+   
+}
+
+.link__icon > * {
+   fill: var(--color1)
 }
 
 .footer__title{

@@ -23,14 +23,14 @@
 
 .information__movie{
    font-size: var(--size-small);
-   color: var(--black);
+   color: var(--contrast);
    padding-top: .125rem;
 }
 
 .information__director,
 .information__year{
    font-size: var(--size-tiny);
-   color: var(--black-transparent);
+   color: var(--contrast-transparent);
 }
 
 .information__hearts{
@@ -38,6 +38,11 @@
    gap: .75vw;
 }
 
-.information__hearts img{
+.information__hearts > svg > *{
+   fill: var(--color2);
+}
+
+.information__hearts img,
+.information__hearts > svg{
    height: 2vw;
 }
