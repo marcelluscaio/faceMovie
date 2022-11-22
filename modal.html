@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/modal.css">
+   <title>faceMovie</title>
+</head>
+<body>
+   <header class="header">
+      <div class="header__logo">
+         <h4 class="logo__text hide">faceMovie</h4>
+         <img class="logo__image" src="assets/images/filmStrip.svg " alt="FaceMovie Logo. It is a red film strip">
+      </div>
+      <div class="header__icons">
+         <a href="modal.html"><input id="open-modal" type="image" class="icons__icon"  src="assets/images/plus.svg" alt="plus sign icon"/></a>         
+         <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+         </div>
+         <img class="icons__icon"  src="assets/images/search.svg" alt="magnifying glass icon">
+      </div>
+   </header>
+   <section class="user-field">
+      <div id="fade"></div>
+      <div id="modal">
+         <div class="modal-header">
+            <h2>ADD TO YOUR MOVIE</h2>
+            <button id="close-modal">X</button>
+         </div>
+         <div class="modal-body">
+            <!-- search container -->
+            <div class="search-container">
+                <div class="search-element">
+                    <input type="text" class="form-control" 
+                    placeholder="Search Movie Title ..." 
+                    id = "movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+        
+                    <div class="search-list" id="search-list">
+                        <!-- list here -->
+                        <!-- <div class="search-list-item">
+                            <div class="search-item-thumbnail">
+                                <img src="assets/images/medium-cover.jpg">
+                            </div>
+                            <div class="search-item-info">
+                                <h3>Guardians of the Galaxy Vol. 2</h3>
+                                <p>2017</p>
+                             </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end of search container -->
+
+            <!-- result container -->
+            <div class="container">
+               <div class="result-container">
+                  <div class="result-grid" id="result-grid">
+                     <!-- movie information here -->
+                     <!-- <div class="movie-poster">
+                        <img src="/assets/images/medium-cover.jpg" alt="movie poster">
+                     </div> 
+                     <div class="movie-info">
+                        <h3 class="movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class="movie-misc-info">
+                           <li class="year">Year: 2017</li>
+                           <li class="rated">Ratings: PG-13</li>
+                           <li class="released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class="genre"><b>Genre:</b>Action, Adventure, Comedy</p>
+                        <p class="writer"><b>Writer:</b>James Gunn...</p>
+                        <p class="actors"><b>Actors:</b>Chris Pratt...</p>
+                        <p class="plot"><b>Plot:</b>The Guardians struggle...</p>
+                        <p class="language"><b>Language:</b>English</p>
+                        <p class="awards"><b>Awards:</b>Nominated for 1 Oscar</p>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <div style="height: 100vh;"></div>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/modal.js"></script>
+</body>
+</html>
