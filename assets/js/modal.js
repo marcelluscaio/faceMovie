@@ -3,52 +3,19 @@ const fade = document.querySelector("#fade");
 const openModalButton = document.querySelector("#open-modal");
 const closeModalButton = document.querySelector("#close-modal");
 const body = document.querySelector("body");
+const movieSearchBox = document.querySelector('#modal-search');
 
-[openModalButton, closeModalButton].forEach( element => {
+[openModalButton, closeModalButton, fade].forEach(element => {
     element.addEventListener("click", () => {
         modal.classList.toggle("hide");
         fade.classList.toggle("hide");
         body.classList.toggle("avoid-scroll")
-
     });
 });
 
-
-
-/* //esse é o script do modal
-
-
-
-
-// o toggle identifica se a classe existe ele remove, se náo esta ele add
-const toggleModal = () => {
-    // modal.classList.toggle("hide");
-    // fade.classList.toggle("hide");
-    // in a more elegant way
-    [modal, fade].forEach((element) => element.classList.toggle("hide"));
-}
-
-// o evento é padrão para vários elementos, esses elementos todos tem evento de clique
-[openModalButton, closeModalButton, fade].forEach((element) => {
-    element.addEventListener("click", () => toggleModal());
-});
-
-
-// aqui inicia o script do json
-
-const movieSearchBox = document.getElementById('movie-search-box');
-const searchList = document.getElementById('search-list');
-const resultGrid = document.getElementById('result-grid');
+movieSearchBox.addEventListener("keyup", findMovies);
 
 // load movies from API
-async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=72a1c783`;
-    const res = await fetch(`${URL}`);
-    const data = await res.json();
-    // console.log(data.Search);
-    if(data.Response == "True") displayMovieList(data.Search);
-}
-
 function findMovies(){
     let searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length > 0){
@@ -58,6 +25,28 @@ function findMovies(){
         searchList.classList.add('hide-search-list');
     }
 }
+
+async function loadMovies(searchTerm){
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=72a1c783`;
+    const res = await fetch(`${URL}`);
+    const data = await res.json();
+    // console.log(data.Search);
+    if(data.Response == "True") displayMovieList(data.Search);
+}
+
+/* //esse é o script do modal
+
+onkeyup="findMovies()" 
+onclick="findMovies()" Usar click ou blur? Ha necessidade?
+
+
+// aqui inicia o script do json
+
+
+const searchList = document.getElementById('search-list');
+const resultGrid = document.getElementById('result-grid');
+
+
 
 function displayMovieList(movies){
     searchList.innerHTML = "";

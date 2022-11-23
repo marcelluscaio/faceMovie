@@ -64,26 +64,30 @@
     
     border: min(.25vw, 4px) solid var(--color2);
     border-radius: 50%;
-
 }
 
-/* #fade,
-#modal {
-    pointer-events: all;
-}*/
+.modal__search{
+    padding: .5em 1em;
+    font-size: var(--size-large);
+    color: var(--color3);
+    background-image: linear-gradient(120deg,  var(--white) -50%, var(--color1) 300%);
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: calc(var(--size-large) *2 );
+    border: min(.25vw, 4px) solid var(--color2);    
+}
+
+.modal__search::placeholder{
+    color: var(--black);
+    opacity: 0.5;
+}
 
 /*     
-
 .modal-body p {
     margin-bottom: 1rem;
 }
 
-#modal-hide,
-#fade-hide { */
-    /* usar opacity no lugar de display permite fazer animações */
-/*     opacity: 0;
-    pointer-events: none;
-} */
 /* 
 .search-container{ */
     /* colocar valores proporcionais? */

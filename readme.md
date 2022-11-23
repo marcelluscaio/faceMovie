@@ -19,6 +19,12 @@ Search, add, and share your favorite movies
 - [ ] Create footer
 - [ ] Make search engine work
 - [ ] Light Mode Dark Mode
+- [X] Make Modal appear and disappear on click
+- [X] Make fade and modal transition
+- [X] Modal header styling
+- [X] Avoid body from scrolling
+- [X] Search input styling
+- [ ] Modal body styling
 
 ### References
 
