@@ -2,13 +2,18 @@ const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
 const openModalButton = document.querySelector("#open-modal");
 const closeModalButton = document.querySelector("#close-modal");
+const body = document.querySelector("body");
 
 [openModalButton, closeModalButton].forEach( element => {
     element.addEventListener("click", () => {
         modal.classList.toggle("hide");
         fade.classList.toggle("hide");
+        body.classList.toggle("avoid-scroll")
+
     });
 });
+
+
 
 /* //esse é o script do modal
 

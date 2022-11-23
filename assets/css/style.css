@@ -59,3 +59,7 @@ body{
    --contrast-transparent: var(--white-transparent);
    --gradient: var(--gradient-dark);
 }
+
+.avoid-scroll{
+   overflow: hidden;
+}
