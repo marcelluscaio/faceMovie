@@ -40,14 +40,22 @@
 }
 
 *{
-   box-sizing: border-box;
-   transition: background-color 1s ease, color 1s ease ; /* Ver se esta funcionando */
-
+   box-sizing: border-box;   
 }
 
 body{
    background-image: var(--gradient);
    font-family: var(--family-text);
+}
+
+body, 
+body *,
+svg > *{
+   transition: background-color 1s ease, 
+   background-image 1s ease, 
+   stroke 1s ease, 
+   fill 1s ease, 
+   color 1s ease;
 }
 
 .hide{
