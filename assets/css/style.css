@@ -1,38 +1,64 @@
 @import url('reset.css');
 @import url('header.css');
 @import url('user-field.css');
+@import url('card-section.css');
+@import url('footer.css');
 
 :root{
    --family-title: 'Sacramento', cursive;
    --family-text: 'Quicksand', sans-serif;
 
+   --size-tiny:clamp(.375rem, 1.2vw, .6rem);
+   --size-small:clamp(.5rem, 1.6vw, .8rem);
    --size-medium:clamp(.625rem, 2vw, 1rem);
    --size-large:clamp(.875rem, 3vw, 1.5rem);
    --size-title:clamp(1.25rem, 4vw, 2rem);
 
-   --color1: #C2929D;
-   --color2: #BF0637;
-   --color3: #D9843B;   
+   --color1: var(--color1-light);
+   --color2: var(--color2-light);
+   --color3: var(--color3-light);   
+   --contrast: var(--black);
+   --contrast-transparent: var(--black-transparent);
+   --gradient: var(--gradient-light);
+
+   --color1-light: #C2929D;
+   --color2-light: #BF0637;
+   --color3-light: #D9843B;   
    --black: #23261D;
    --black-transparent: #23261Dbb;
+   --gradient-light: linear-gradient(180deg, #F2F2F0 0%, #C2929D 175%);
+
+
    --color1-dark: #223C3F;
    --color2-dark: #597C7C;
    --color3-dark: #5B2E70;
    --white: #F2F2F0;
    --white-transparent: #F2F2F0bb;
+   --gradient-dark: linear-gradient(180deg, #23261D 0%, #223C3F 175%);
 
    --side-spacing: 5vw;
 }
 
 *{
    box-sizing: border-box;
+   transition: background-color 1s ease, color 1s ease ; /* Ver se esta funcionando */
+
 }
 
 body{
-   background-image: linear-gradient(180deg, #F2F2F0 0%, #C2929D 175%);
+   background-image: var(--gradient);
    font-family: var(--family-text);
 }
 
 .hide{
    display: none;
+}
+
+.dark{
+   --color1: var(--color1-dark);
+   --color2: var(--color2-dark);
+   --color3: var(--color3-dark);   
+   --contrast: var(--white);
+   --contrast-transparent: var(--white-transparent);
+   --gradient: var(--gradient-dark);
 }

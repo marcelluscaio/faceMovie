@@ -1,5 +1,5 @@
 .header{
-   height: 10vh;
+   height: 11vh;
    background-color: var(--color1);
    display: flex;
    justify-content: space-between;
@@ -27,6 +27,11 @@
 .logo__image,
 .icons__icon{
    height: 40%;
+}
+
+.logo__image > *,
+.icons__icon > *{
+   stroke: var(--color2);
 }
 
 .burger{
