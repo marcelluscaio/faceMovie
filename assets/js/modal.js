@@ -1,8 +1,19 @@
-//esse é o script do modal
-const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
+const openModalButton = document.querySelector("#open-modal");
+const closeModalButton = document.querySelector("#close-modal");
+
+[openModalButton, closeModalButton].forEach( element => {
+    element.addEventListener("click", () => {
+        modal.classList.toggle("hide");
+        fade.classList.toggle("hide");
+    });
+});
+
+/* //esse é o script do modal
+
+
+
 
 // o toggle identifica se a classe existe ele remove, se náo esta ele add
 const toggleModal = () => {
@@ -109,4 +120,4 @@ window.addEventListener('click', (event) => {
     if(event.target.className != "form-control"){
         searchList.classList.add('hide-search-list');
     }
-});
+}); */

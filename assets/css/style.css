@@ -1,5 +1,6 @@
 @import url('reset.css');
 @import url('header.css');
+@import url('modal.css');
 @import url('user-field.css');
 @import url('card-section.css');
 @import url('footer.css');
@@ -48,10 +49,6 @@
 body{
    background-image: var(--gradient);
    font-family: var(--family-text);
-}
-
-.hide{
-   display: none;
 }
 
 .dark{
