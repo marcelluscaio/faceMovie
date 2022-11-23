@@ -11,14 +11,19 @@ Search, add, and share your favorite movies
 - [X] Create user section
 - [X] Create Card section
 - [X] Create Footer section
+- [X] Create add film action
+- [X] Search engine (Get information from OMDB and NY Times. Search based on incomplete information)
+- [X] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
+- [X] Light Mode Dark Mode
+- [ ] Bring modal back to index as div
+- [ ] Modal Styling
 - [ ] Make burger work
-- [ ] Create add film action
+- [ ] Create action of card addition
 - [ ] Create search action
-- [ ] Search engine (Get information fom OMDB and NY Times. Search based on incomplete information)
-- [ ] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
+- [ ] Get information from NY Times API
 - [ ] Create footer
 - [ ] Make search engine work
-- [ ] Light Mode Dark Mode
+- [ ] Make filter button 
 
 ### References
 
