@@ -42,17 +42,17 @@ function displayMovieList(movies){
     for(let idx = 0; idx < movies.length; idx++){
         let movieListItem = document.createElement('div');
         movieListItem.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
-        movieListItem.classList.add('search-list-item');
+        movieListItem.classList.add('search-list__item');
         if(movies[idx].Poster != "N/A"){
             moviePoster = movies[idx].Poster;
         } else{
             moviePoster = "assets/images/image_not_found.png";
         };
         movieListItem.innerHTML = `
-        <div class = "search-item-thumbnail">
+        <div class = "search-item__thumbnail">
             <img src = "${moviePoster}">
         </div>
-        <div class = "search-item-info">
+        <div class = "search-item__info">
             <h3>${movies[idx].Title}</h3>
             <p>${movies[idx].Year}</p>
         </div>
@@ -63,7 +63,7 @@ function displayMovieList(movies){
 }
 
 function loadMovieDetails(){
-    const searchListMovies = searchList.querySelectorAll('.search-list-item');
+    const searchListMovies = searchList.querySelectorAll('.search-list__item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
             // console.log(movie.dataset.id);

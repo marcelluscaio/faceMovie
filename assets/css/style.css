@@ -63,3 +63,18 @@ body{
 .avoid-scroll{
    overflow: hidden;
 }
+
+::-webkit-scrollbar{
+    width: 2vw; /*Melhorar medida*/
+    background-color: var(--color2);
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 1px var(--contrast);
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: var(--gradient);
+    outline: none;
+    border-radius: 1vw;
+}
