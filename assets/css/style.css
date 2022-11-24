@@ -78,3 +78,8 @@ body{
     outline: none;
     border-radius: 1vw;
 }
+
+::selection{
+   color: var(--color2);
+   background-color: var(--color3) ;
+}
