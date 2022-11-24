@@ -54,9 +54,15 @@
       <div id="modal" class="modal hide">
          <div class="modal__header">
             <h2 class="modal__header__title">Search for movie</h2>
-            <button id="close-modal" class="modal__header__close">&times</button>
+            <button id="close-modal" class="modal__header__close">
+               <svg class="close__symbol" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.23737 1V15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 8H15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+            </button>
          </div>
          <input type="search" class="modal__search" id="modal-search" placeholder="Movie title" >
+         <div class="modal__search-list" id="search-list"></div>
       </div>
    </section>
    <section class="user-field">
