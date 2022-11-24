@@ -24,7 +24,10 @@ Search, add, and share your favorite movies
 - [X] Modal header styling
 - [X] Avoid body from scrolling
 - [X] Search input styling
-- [ ] Modal body styling
+- [X] Modal body styling
+- [X] Styling of result grid 
+- [ ] Make result grid disappear
+- [ ] Insert button to add movie to main page
 
 ### References
 

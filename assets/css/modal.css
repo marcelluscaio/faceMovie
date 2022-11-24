@@ -18,7 +18,7 @@
 
 .modal{
     width: 80vw;
-    height: 75vh;
+    height: 75vh; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -31,12 +31,7 @@
     border: min(.75vw, 10px) solid var(--color3);
 }
 
-.hide{
-   opacity: 0;
-   z-index: -1;
 
-   transition: opacity 0s linear;
-}
 
 .modal__header {
    display: flex;
@@ -102,20 +97,28 @@
     outline: none;
 }
 
-.hide-search-list{
-    display: none;
-}
-
 .modal__search-list{
-    /* position: absolute;
-    right: 0;
-    top: 100%; */
     max-height: 75%;
     width: calc(100% - (var(--size-large) * 2));
     overflow-y: scroll;
 	display: block;
 	margin: 0 auto;
     perspective: 1000px;
+}
+
+.modal__search-list::-webkit-scrollbar{
+    width: 2vw; /*Melhorar medida*/
+    background-color: var(--color2);
+}
+
+.modal__search-list::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 1px var(--contrast);
+}
+
+.modal__search-list::-webkit-scrollbar-thumb{
+    background-image: var(--gradient);
+    outline: none;
+    border-radius: 1vw;
 }
 
 .search-list__item{
@@ -164,23 +167,68 @@
     margin-top: .75em;
 } 
 
-
-.modal__search-list::-webkit-scrollbar{
-    width: 2vw; /*Melhorar medida*/
-    background-color: var(--color2);
-}
-
-.modal__search-list::-webkit-scrollbar-track{
-    box-shadow: inset 0 0 1px var(--contrast);
-}
-
-.modal__search-list::-webkit-scrollbar-thumb{
+.modal__result-grid{
+    z-index: 3;
+    width: 90vw; /*Medida provisoria*/
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: var(--gradient);
-    outline: none;
-    border-radius: 1vw;
+    padding: 1em;
+    border-radius: calc(min(80vw, 75vh) / 10);
+    border: min(.75vw, 10px) solid var(--color3);
+    overflow-y: scroll;
 }
 
+.result-grid__movie-poster{
+    width: 100%;
+}
 
+.result-grid__movie-poster > img{
+    width: 75%;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    margin: 0 auto;
+    display: block;
+}
+
+.result-grid__movie-info h3{
+    color: var(--color2);
+    font-size: var(--size-title);
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+.result-grid__movie-info ul{
+    color: var(--contrast-transparent);
+    font-size: var(--size-medium);
+    line-height: 1.4;
+    margin-bottom: .5em;
+}
+
+.result-grid__movie-info p{
+    color: var(--contrast-transparent);
+     font-size: var(--size-large);
+     line-height: 1.4;
+}
+
+.result-grid__movie-info p > b{
+    color: var(--color2);
+}
+
+.hide{
+   opacity: 0;
+   z-index: -1;
+
+   transition: opacity 0s linear;
+}
+
+.hide-search-list{
+    display: none;
+}
 
 /*     
 .modal-body p {
@@ -227,72 +275,6 @@
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-
-.search-list{
-    position: absolute;
-    right: 0;
-    top: 100%;
-    max-height: 500px;
-    overflow-y: scroll;
-    z-index: 10;
-}
-
-.search-list .search-list-item{
-    background-color: var(--white);
-    padding: 0.5rem;
-    border-bottom: 1px solid var(--color1);
-    width: calc(350px - 8px);
-    color: var(--color2);
-    cursor: pointer;
-    -webkit-transition: background-color 200ms ease;
-    -o-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
-}
-.search-list .search-list-item:Hover{
-    background-color: #1f1f1f;
-}
-.search-list-item{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.search-item-thumbnail img{
-    width: 40px;
-    margin-right: 1rem;
-}
-.search-item-info h3{
-    font-weight: 600;
-    font-size: 1rem;
-}
-.search-item-info p{
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    opacity: 0.6;
-} */
-
-/* thumbnail */
-/* .search-list::-webkit-scrollbar{
-    width: 8px;
-}
-.search-list::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-.search-list::-webkit-scrollbar-thumb{
-    background-color: var(--yellow-color);
-    outline: none;
-    border-radius: 10px;
-} */
-
-/* js related class */
-/* .hide-search-list{
-    display: none;
-} */
 
 /* movie result */
 /* .result-container{

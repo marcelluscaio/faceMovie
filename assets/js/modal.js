@@ -5,6 +5,7 @@ const closeModalButton = document.querySelector("#close-modal");
 const body = document.querySelector("body");
 const movieSearchBox = document.querySelector('#modal-search');
 const searchList = document.querySelector('#search-list');
+const resultGrid = document.querySelector('#result-grid');
 
 [openModalButton, closeModalButton, fade].forEach(element => {
     element.addEventListener("click", () => {
@@ -79,11 +80,12 @@ function loadMovieDetails(){
 
 
 function displayMovieDetails(details){
+    resultGrid.classList.remove("hide");
     resultGrid.innerHTML = `
-    <div class = "movie-poster">
+    <div class = "result-grid__movie-poster">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
     </div>
-    <div class = "movie-info">
+    <div class = "result-grid__movie-info">
         <h3 class = "movie-title">${details.Title}</h3>
         <ul class = "movie-misc-info">
             <li class = "year">Year: ${details.Year}</li>
