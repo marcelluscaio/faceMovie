@@ -23,7 +23,22 @@ Search, add, and share your favorite movies
 - [ ] Get information from NY Times API
 - [ ] Create footer
 - [ ] Make search engine work
+
+- [ ] Light Mode Dark Mode
+- [X] Make Modal appear and disappear on click
+- [X] Make fade and modal transition
+- [X] Modal header styling
+- [X] Avoid body from scrolling
+- [X] Search input styling
+- [X] Modal body styling
+- [X] Styling of result grid 
+- [X] Style of close button from input search
+- [X] Use of mix-blend-mode to addapt to dark mode withou using new asset
+- [ ] Make result grid disappear
+- [ ] Insert button to add movie to main page
+
 - [ ] Make filter button 
+
 
 ### References
 

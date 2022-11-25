@@ -1,63 +1,268 @@
+.modal,
+.fade{
+   position: fixed;
 
-#fade,
-#modal {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
+   opacity: 1;
+   transition: opacity 0.5s ease;
 }
 
-#fade {
-    position: fixed;
+.fade{    
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
     background-color: rgba(0,0,0,0.6);
-    z-index: 5;
+    z-index: 1;
 }
 
-#modal {
-    position: fixed;
-    left: 50%;
+.modal{
+    width: 80vw;
+    height: 75vh; 
     top: 50%;
-    /* to put on the center of the screen */
+    left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--white);
-    z-index: 10;
-    /* colocar valores proporcionais no width? */
-    width: 500px;
-    /* to not overflow the vw */
-    max-width: 90%;
-    padding: 1.2rem;
-    border-radius: 0.2rem;
+
+    background-image: var(--gradient);
+    z-index: 2;
+
+    padding: 1em;
+    border-radius: calc(min(80vw, 75vh) / 10);
+    border: min(.75vw, 10px) solid var(--color3);
 }
 
-.modal-header {
+
+
+.modal__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: var(--size-large);
+   padding-bottom: .5em;
+   border-bottom: min(.5vw, 8px) solid var(--color3); 
+   margin-bottom: 1rem;
+}
+
+.modal__header__title{
+    color: var(--color2);
+    font-weight: 600;    
+}
+
+.modal__header__close{
+    width: 7vw;
+    height: 7vw;
+    background-color: var(--color3);
+    color: var(--color2);
+    font-weight: 600;
+    padding: 0;
+    font-size: inherit;
+    
+    border: min(.25vw, 4px) solid var(--color2);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close__symbol{
+    width: 65%;
+    transform: rotate(45deg);
+}
+
+.close__symbol > *{
+    stroke: var(--color2)
+}
+.modal__search{
+    padding: .5em 1em;
+    font-size: var(--size-large);
+    color: var(--color3);
+    background-image: linear-gradient(120deg,  var(--white) -50%, var(--color1) 300%);
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: calc(var(--size-large) *2 );
+    border: min(.25vw, 4px) solid var(--color2);    
+}
+
+.modal__search::placeholder{
+    color: var(--black);
+    opacity: 0.5;
+}
+
+.modal__search::-webkit-search-cancel-button{
+    appearance: none;
+    content: '';
+    width: var(--size-large);
+    height: var(--size-large);
+    background-image: url('../images/plus.svg');
+    background-size: contain;
+    transform: rotate(45deg);
+}
+
+.dark .modal__search::-webkit-search-cancel-button{
+    mix-blend-mode: luminosity; /*Gambiarra boa*/
+}
+
+.modal__search:focus,
+.modal__search:focus-visible,
+.modal__search:focus-within{
+    border: min(.25vw, 4px) solid var(--color3);
+    outline: none;
+}
+
+.modal__search-list{
+    max-height: 75%;
+    width: calc(100% - (var(--size-large) * 2));
+    overflow-y: scroll;
+	display: block;
+	margin: 0 auto;
+    perspective: 1000px;
+}
+
+.modal__search-list::-webkit-scrollbar{
+    width: 2vw; /*Melhorar medida*/
+    background-color: var(--color2);
+}
+
+.modal__search-list::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 1px var(--contrast);
+}
+
+.modal__search-list::-webkit-scrollbar-thumb{
+    background-image: var(--gradient);
+    outline: none;
+    border-radius: 1vw;
+}
+
+.search-list__item{
+    background-color: var(--white);
+    box-shadow: inset 1px 1px 5px var(--color1), inset -1px -1px 5px var(--color1);
+    color: var(--color2);
+    border-bottom: 1px solid var(--color1); /*Make 1 px a fluid value?*/
+    width: calc(100% - (var(--size-large) * 2));
+    margin: 0 auto;
+	display: flex;
+	gap: 0.5em;
+    transition: transform 1s ease, box-shadow 1s ease-in-out;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+.search-list__item:hover{
+    transform: translateZ(2px) translateX(2px);
+    box-shadow: inset 1px 1px 5px var(--color1), inset -1px -1px 5px var(--color1), 2px 2px 4px var(--black);
+    transition: transform .5s ease, box-shadow .25s ease-in-out;    
+}
+
+.search-item__thumbnail{
+    flex: 1;
+}
+
+.search-item__thumbnail img{
+    width: 100%;
+	aspect-ratio: 9 / 16;
+	object-fit: cover;
+}
+
+.search-item__info{
+	flex: 1;
+    font-weight: 600;
+}
+
+.search-item__info h3{    
+    font-size: var(--size-large);
+    color: var(--color2);
+}
+
+.search-item__info p{
+    font-size: var(--size-medium);
+    color: var(--color1);
+    margin-top: .75em;
+} 
+
+.modal__result-grid{
+    z-index: 3;
+    width: 90vw; /*Medida provisoria*/
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: var(--gradient);
+    padding: 1em;
+    border-radius: calc(min(80vw, 75vh) / 10);
+    border: min(.75vw, 10px) solid var(--color3);
+    overflow-y: scroll;
+}
+
+.result-grid__movie-poster{
+    width: 100%;
+}
+
+.result-grid__movie-poster > img{
+    width: 75%;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    margin: 0 auto;
+    display: block;
+}
+
+.result-grid__movie-info h3{
+    color: var(--color2);
+    font-size: var(--size-title);
+    font-weight: 600;
+    margin: .5em 0;
+    text-align: center;
+}
+
+.result-grid__movie-info ul{
+    color: var(--contrast-transparent);
+    font-size: var(--size-medium);
+    line-height: 1.4;
+    margin-bottom: .5em;    
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    /* to let the space between title and content: */
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
 }
 
+.result-grid__movie-info ul li> b{
+    color: var(--color2);
+}
+
+.result-grid__movie-info p{
+    color: var(--contrast-transparent);
+     font-size: var(--size-large);
+     line-height: 1.4;
+}
+
+.result-grid__movie-info p > b{
+    color: var(--color2);
+}
+
+.hide{
+   opacity: 0;
+   z-index: -1;
+
+   transition: opacity 0s linear;
+}
+
+.hide-search-list{
+    display: none;
+}
+
+/*     
 .modal-body p {
     margin-bottom: 1rem;
 }
 
-#modal-hide,
-#fade-hide {
-    /* usar opacity no lugar de display permite fazer animações */
-    opacity: 0;
-    pointer-events: none;
-}
-
-.search-container{
+/* 
+.search-container{ */
     /* colocar valores proporcionais? */
-    height: 150px;
+/*     height: 150px; */
     /* centraliza a caixa de busca, talvez fique melhor à esquerda, nesse caso, comentar as linhas abaixo */
-    display: -webkit-box;
+/*     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: left;
@@ -93,74 +298,8 @@
     border-bottom-left-radius: 3px;
 }
 
-.search-list{
-    position: absolute;
-    right: 0;
-    top: 100%;
-    max-height: 500px;
-    overflow-y: scroll;
-    z-index: 10;
-}
-
-.search-list .search-list-item{
-    background-color: var(--white);
-    padding: 0.5rem;
-    border-bottom: 1px solid var(--color1);
-    width: calc(350px - 8px);
-    color: var(--color2);
-    cursor: pointer;
-    -webkit-transition: background-color 200ms ease;
-    -o-transition: background-color 200ms ease;
-    transition: background-color 200ms ease;
-}
-.search-list .search-list-item:Hover{
-    background-color: #1f1f1f;
-}
-.search-list-item{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.search-item-thumbnail img{
-    width: 40px;
-    margin-right: 1rem;
-}
-.search-item-info h3{
-    font-weight: 600;
-    font-size: 1rem;
-}
-.search-item-info p{
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
-    opacity: 0.6;
-}
-
-/* thumbnail */
-.search-list::-webkit-scrollbar{
-    width: 8px;
-}
-.search-list::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-.search-list::-webkit-scrollbar-thumb{
-    background-color: var(--yellow-color);
-    outline: none;
-    border-radius: 10px;
-}
-
-/* js related class */
-.hide-search-list{
-    display: none;
-}
-
 /* movie result */
-.result-container{
+/* .result-container{
     padding: 3rem 0;
 }
 .movie-poster img{
@@ -172,10 +311,10 @@
     text-align: center;
     color: var(--color2);
     padding-top: 3rem;
-}
+} */
 
 /* movie info stylings */
-.movie-title{
+/* .movie-title{
     font-size: 2rem;
     color: var(--yellow-color);
 }
@@ -297,4 +436,7 @@
         padding-left: 0;
         margin-left: 0;
     }
-}
+} */
+
+
+
