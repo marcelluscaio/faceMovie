@@ -28,6 +28,8 @@ Search, add, and share your favorite movies
 - [X] Styling of result grid 
 - [ ] Make result grid disappear
 - [ ] Insert button to add movie to main page
+- [ ] Estilizar x do input search
+
 
 ### References
 

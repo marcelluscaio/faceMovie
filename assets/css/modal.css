@@ -90,6 +90,16 @@
     opacity: 0.5;
 }
 
+.modal__search::-webkit-search-cancel-button{
+    appearance: none;
+    content: '';
+    width: var(--size-large);
+    height: var(--size-large);
+    background-image: url('../images/plus.svg');
+    background-size: contain;
+    transform: rotate(45deg);
+}
+
 .modal__search:focus,
 .modal__search:focus-visible,
 .modal__search:focus-within{
