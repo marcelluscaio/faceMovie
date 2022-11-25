@@ -1,13 +1,16 @@
 .card-section{
+   min-height: calc(100vh - 11vh);
    display: flex;
    flex-wrap: wrap;
    gap: 5vw;
+   align-content: flex-start;
    padding: 1em var(--side-spacing) 1em;
 }
 
 .card-section__card{
    display: flex;
    flex-direction: column;
+   flex: 0 1 min-content;
 }
 
 .card__image{
@@ -15,6 +18,21 @@
    height: calc(18.75vw * 3/2);
    border-radius: calc(18.75vw / 10);
    border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
+   overflow: hidden;
+}
+
+.card__image > img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+
+}
+
+.card__information{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   flex-grow: 1;
 }
 
 .card__information > *{
