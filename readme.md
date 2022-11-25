@@ -26,9 +26,10 @@ Search, add, and share your favorite movies
 - [X] Search input styling
 - [X] Modal body styling
 - [X] Styling of result grid 
+- [X] Style of close button from input search
+- [X] Use of mix-blend-mode to addapt to dark mode withou using new asset
 - [ ] Make result grid disappear
 - [ ] Insert button to add movie to main page
-- [ ] Estilizar x do input search
 
 
 ### References
