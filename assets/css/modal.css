@@ -204,6 +204,7 @@
     width: 75%;
     aspect-ratio: 1;
     object-fit: cover;
+    object-position: 0 25%;
 
     margin: 0 auto;
     display: block;

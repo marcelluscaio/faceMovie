@@ -15,16 +15,6 @@ Search, add, and share your favorite movies
 - [X] Search engine (Get information from OMDB and NY Times. Search based on incomplete information)
 - [X] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
 - [X] Light Mode Dark Mode
-- [ ] Bring modal back to index as div
-- [ ] Modal Styling
-- [ ] Make burger work
-- [ ] Create action of card addition
-- [ ] Create search action
-- [ ] Get information from NY Times API
-- [ ] Create footer
-- [ ] Make search engine work
-
-- [ ] Light Mode Dark Mode
 - [X] Make Modal appear and disappear on click
 - [X] Make fade and modal transition
 - [X] Modal header styling
@@ -34,10 +24,16 @@ Search, add, and share your favorite movies
 - [X] Styling of result grid 
 - [X] Style of close button from input search
 - [X] Use of mix-blend-mode to addapt to dark mode withou using new asset
+- [X] Bring modal back to index as div
+- [X] Modal Styling
+- [X] Make search engine work
+- [X] Create footer
+- [ ] Create action of card addition
+- [ ] Get information from NY Times API
 - [ ] Make result grid disappear
 - [ ] Insert button to add movie to main page
-
 - [ ] Make filter button 
+- [ ] Make burger work
 
 
 ### References
