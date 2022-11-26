@@ -161,24 +161,29 @@
 
 .search-item__thumbnail img{
     width: 100%;
-	aspect-ratio: 9 / 16;
+	aspect-ratio: 2 / 3;
 	object-fit: cover;
+    border-radius: 15% / 10%;
+    border: 2px solid var(--color2); /*Queria fazer dinamicamente, mas valores quebrados de pixel geram espacamento entre borda e imagem*/
 }
 
 .search-item__info{
 	flex: 1;
     font-weight: 600;
+    text-align: center;
 }
 
 .search-item__info h3{    
     font-size: var(--size-large);
     color: var(--color2);
+    padding: 0 .25em;
 }
 
 .search-item__info p{
     font-size: var(--size-medium);
     color: var(--color1);
     margin-top: .75em;
+    
 } 
 
 .modal__result-grid{

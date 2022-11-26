@@ -34,8 +34,8 @@ Search, add, and share your favorite movies
 - [X] Treatment for image not found with mix blend mode
 - [X] Avoid pointer events in fade when grid result appears
 - [X] Style poster in grid resutl
+- [X] On reload grid result scrolls
 - [ ] Style buttons in grid result
-- [ ] On reload grid result scrolls
 - [ ] Give possibility of user to grade the movie
 - [ ] Get information from NY Times API
 - [ ] Make filter button 

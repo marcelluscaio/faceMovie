@@ -79,10 +79,10 @@ function loadMovieDetails(){
     });
 }
 
-
 function displayMovieDetails(details){
     resultGrid.classList.remove("hide");
     fade.style.pointerEvents = 'none';
+    resultGrid.scroll(0, 0);
     resultGrid.innerHTML = `
     <div class = "result-grid__movie-poster">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
@@ -140,8 +140,8 @@ function displayMovieDetails(details){
         resultGrid.classList.add("hide");
         modal.classList.add("hide");
         fade.classList.add("hide");
-        body.classList.remove("avoid-scroll")
-        
+        body.classList.remove("avoid-scroll");
+            
     });
     let buttonCancel = document.createElement("button");
     buttonCancel.innerText = 'Cancel';
@@ -150,11 +150,11 @@ function displayMovieDetails(details){
         fade.style.pointerEvents = 'all';
         resultGrid.innerHTML = '';
         resultGrid.classList.add("hide");
+        
     });
     form.appendChild(buttonAdd);
     form.appendChild(buttonCancel);
-    resultGrid.appendChild(form)
-
+    resultGrid.appendChild(form);
 }
 
 
