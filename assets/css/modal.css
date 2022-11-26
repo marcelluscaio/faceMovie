@@ -205,6 +205,8 @@
     aspect-ratio: 1;
     object-fit: cover;
     object-position: 0 25%;
+    border-radius: 50%;
+    border: min(.5vw, 8px) solid var(--color2);
 
     margin: 0 auto;
     display: block;

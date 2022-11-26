@@ -32,7 +32,8 @@ Search, add, and share your favorite movies
 - [X] Make result grid disappear
 - [X] Insert button to add movie to main page
 - [X] Treatment for image not found with mix blend mode
-- [ ] Style poster in grid resutl
+- [X] Avoid pointer events in fade when grid result appears
+- [X] Style poster in grid resutl
 - [ ] Style buttons in grid result
 - [ ] On reload grid result scrolls
 - [ ] Give possibility of user to grade the movie

@@ -82,6 +82,7 @@ function loadMovieDetails(){
 
 function displayMovieDetails(details){
     resultGrid.classList.remove("hide");
+    fade.style.pointerEvents = 'none';
     resultGrid.innerHTML = `
     <div class = "result-grid__movie-poster">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
@@ -107,6 +108,7 @@ function displayMovieDetails(details){
     buttonAdd.innerText = 'Add';
     buttonAdd.addEventListener('click', (e) => {
         e.preventDefault();
+        fade.style.pointerEvents = 'all';
         let card = document.createElement('div');
         card.classList.add("card-section__card");
         card.innerHTML = `
@@ -145,6 +147,7 @@ function displayMovieDetails(details){
     buttonCancel.innerText = 'Cancel';
     buttonCancel.addEventListener('click', (e) => {
         e.preventDefault();
+        fade.style.pointerEvents = 'all';
         resultGrid.innerHTML = '';
         resultGrid.classList.add("hide");
     });
