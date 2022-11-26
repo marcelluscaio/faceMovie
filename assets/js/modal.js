@@ -104,7 +104,10 @@ function displayMovieDetails(details){
     </div>
     `;
     let form = document.createElement("form");
+    form.classList.add("button-container");
     let buttonAdd = document.createElement("button");
+    buttonAdd.classList.add("result-button");
+    buttonAdd.classList.add("button-add");
     buttonAdd.innerText = 'Add';
     buttonAdd.addEventListener('click', (e) => {
         e.preventDefault();
@@ -144,6 +147,8 @@ function displayMovieDetails(details){
             
     });
     let buttonCancel = document.createElement("button");
+    buttonCancel.classList.add("result-button");
+    buttonCancel.classList.add("button-cancel");
     buttonCancel.innerText = 'Cancel';
     buttonCancel.addEventListener('click', (e) => {
         e.preventDefault();
