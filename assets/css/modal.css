@@ -252,6 +252,13 @@
 .button-container{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.input-range{
+    width: 80%;
+    margin-bottom: .75em;
 }
 
 .result-button{
