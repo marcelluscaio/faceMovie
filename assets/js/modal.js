@@ -84,7 +84,7 @@ function displayMovieDetails(details){
     resultGrid.classList.remove("hide");
     resultGrid.innerHTML = `
     <div class = "result-grid__movie-poster">
-        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
     </div>
     <div class = "result-grid__movie-info">
         <h3 class = "movie-title">${details.Title}</h3>
@@ -110,7 +110,7 @@ function displayMovieDetails(details){
         let card = document.createElement('div');
         card.classList.add("card-section__card");
         card.innerHTML = `
-            <div class="card__image"><img src="${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}"></div>
+            <div class="card__image"><img src="${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}"></div>
             <div class="card__information">
                 <h4 class="information__movie">${details.Title}</h4>
                 <h6 class="information__director">${details.Director}</h6>

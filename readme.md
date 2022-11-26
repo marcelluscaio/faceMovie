@@ -28,10 +28,15 @@ Search, add, and share your favorite movies
 - [X] Modal Styling
 - [X] Make search engine work
 - [X] Create footer
-- [ ] Create action of card addition
+- [X] Create action of card addition
+- [X] Make result grid disappear
+- [X] Insert button to add movie to main page
+- [X] Treatment for image not found with mix blend mode
+- [ ] Style poster in grid resutl
+- [ ] Style buttons in grid result
+- [ ] On reload grid result scrolls
+- [ ] Give possibility of user to grade the movie
 - [ ] Get information from NY Times API
-- [ ] Make result grid disappear
-- [ ] Insert button to add movie to main page
 - [ ] Make filter button 
 - [ ] Make burger work
 

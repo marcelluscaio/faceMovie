@@ -19,13 +19,18 @@
    border-radius: calc(18.75vw / 10);
    border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
    overflow: hidden;
+   background-image: var(--gradient);
 }
 
 .card__image > img{
    height: 100%;
    width: 100%;
    object-fit: cover;
+   mix-blend-mode: multiply;
+}
 
+.dark .card__image > img{
+   mix-blend-mode: soft-light;
 }
 
 .card__information{
