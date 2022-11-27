@@ -37,7 +37,9 @@ Search, add, and share your favorite movies
 - [X] On reload grid result scrolls
 - [X] Style buttons in grid result
 - [X] Give possibility of user to grade the movie
+- [X] Organize form field into divs 
 - [ ] Style range
+- [ ] Make number appear on range
 - [ ] Complete Readme
 - [ ] Get information from NY Times API
 - [ ] Create tooltip to show NY times information on hover

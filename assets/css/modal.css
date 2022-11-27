@@ -82,7 +82,7 @@
     display: block;
     margin: 0 auto;
     border-radius: calc(var(--size-large) *2 );
-    border: min(.25vw, 4px) solid var(--color2);    
+    border: min(.25vw, 4px) solid var(--color2);     
 }
 
 .modal__search::placeholder{
@@ -249,11 +249,27 @@
     color: var(--color2);
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.range-container{
+    text-align: center;
+}
+
 .button-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
+}
+
+.label-range{
+    color: var(--color2);
+    font-size: var(--size-large);
+    font-weight: 600;
+    display: block; 
+    margin-bottom: .25em;
 }
 
 .input-range{

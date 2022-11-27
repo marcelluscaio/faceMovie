@@ -12,7 +12,7 @@ const cardSection = document.querySelector('.card-section');
     element.addEventListener("click", () => {
         modal.classList.toggle("hide");
         fade.classList.toggle("hide");
-        body.classList.toggle("avoid-scroll")
+        body.classList.toggle("avoid-scroll");
     });
 });
 
@@ -104,7 +104,7 @@ function displayMovieDetails(details){
     </div>
     `;
     let form = document.createElement("form");
-    form.classList.add("button-container");
+    form.classList.add("form");
     let buttonAdd = document.createElement("button");
     buttonAdd.classList.add("result-button");
     buttonAdd.classList.add("button-add");
@@ -168,14 +168,34 @@ function displayMovieDetails(details){
         resultGrid.classList.add("hide");
         
     });
+    let labelRange = document.createElement('label');
+    labelRange.innerHTML='How do you like this movie?';
+    labelRange.setAttribute('for', 'input-range');
+    labelRange.classList.add('label-range')
+    
     let inputRange = document.createElement('input');
     inputRange.type = 'range';
     inputRange.min = 0;
     inputRange.max = 10;
+    inputRange.value = 5;
+    inputRange.setAttribute('id', 'input-range');
     inputRange.classList.add('input-range')
-    form.appendChild(inputRange);
-    form.appendChild(buttonAdd);
-    form.appendChild(buttonCancel);
+    
+    let rangeContainer = document.createElement('div');
+    rangeContainer.classList.add('range-container');
+    rangeContainer.appendChild(labelRange);
+    rangeContainer.appendChild(inputRange);
+    
+    let buttonContainer = document.createElement('div');
+    buttonContainer.classList.add('button-container');
+    
+    buttonContainer.appendChild(buttonAdd);
+    buttonContainer.appendChild(buttonCancel);
+
+    form.appendChild(rangeContainer);
+    form.appendChild(buttonContainer);
+
+
     resultGrid.appendChild(form);
 }
 
