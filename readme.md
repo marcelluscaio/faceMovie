@@ -38,7 +38,11 @@ Search, add, and share your favorite movies
 - [X] Style buttons in grid result
 - [X] Give possibility of user to grade the movie
 - [X] Organize form field into divs 
-- [ ] Style range
+- [X] Style range
+- [ ] Range styling to all browser
+- [ ] Control range focus
+- [ ] Range with different color before and after thumb
+- [ ] thumb Heart color on dark mode
 - [ ] Make number appear on range
 - [ ] Complete Readme
 - [ ] Get information from NY Times API
