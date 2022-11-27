@@ -257,6 +257,7 @@
 
 .range-container{
     text-align: center;
+    margin-bottom: .75em;
 }
 
 .button-container{
@@ -274,7 +275,20 @@
 
 .input-range{
     width: 80%;
-    margin-bottom: .75em;
+    margin-bottom: .25em;
+}
+
+.hearts-label{
+   justify-content: center;
+   gap: .75vw;
+}
+
+.hearts-label > svg > *{
+   fill: var(--color2);
+}
+
+.hearts-label > svg{
+   height: 3vw;
 }
 
 .result-button{
