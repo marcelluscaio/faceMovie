@@ -110,3 +110,39 @@
 .checkbox:checked ~ .switch > .slider{
   left: calc(95% - 4vw);
 }
+
+.switch-label{
+   background-color: transparent; 
+   position: absolute;
+   display: flex;
+   top: 4.5vw; /*Vai ter que mudar*/
+   right: calc(var(--side-spacing) + 12vw + .75em);
+   overflow: hidden;
+   height: var(--size-medium);
+   gap: 0.25em;
+   font-size: var(--size-medium);
+}
+
+.switch-label__type{
+   display: flex;
+   flex-direction: column;
+   transform: translateY(0);
+   transition: transform .5s ease;
+}
+
+.dark .switch-label__type{
+   --translate: calc(-1 * var(--size-medium));
+   transform: translateY(var(--translate));
+}
+
+.type__light{
+   color: var(--black);
+}
+
+.type__dark{
+   color: var(--white);
+}
+
+.switch-label__mode{
+   color: var(--color2)
+}

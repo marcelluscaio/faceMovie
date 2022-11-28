@@ -43,7 +43,6 @@ Search, add, and share your favorite movies
 - [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
 - [X] Range with different color before and after thumb (Contributed: Estevam Morais)
 - [ ] Range styling to all browsers
-- [ ] Make number appear on range
 - [ ] Adapt to desktop
 - [ ] Create tooltip to show NY times information on hover
 - [ ] Make filter button work
