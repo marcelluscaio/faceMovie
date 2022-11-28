@@ -39,11 +39,13 @@ Search, add, and share your favorite movies
 - [X] Give possibility of user to grade the movie
 - [X] Organize form field into divs 
 - [X] Style range
+- [X] Control range focus
+- [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
 - [ ] Range styling to all browser
-- [ ] Control range focus
 - [ ] Range with different color before and after thumb
-- [ ] thumb Heart color on dark mode
 - [ ] Make number appear on range
+- [ ] Adapt to desktop
+- [ ] Crete 404 error
 - [ ] Complete Readme
 - [ ] Get information from NY Times API
 - [ ] Create tooltip to show NY times information on hover

@@ -295,6 +295,12 @@
   background-size: contain;
   cursor: pointer;
   margin-top: -1%;
+  filter: brightness(1) drop-shadow(2px 2px 4px var(--black));
+}
+
+.dark .input-range::-webkit-slider-thumb{
+    mix-blend-mode: luminosity;
+    filter: brightness(4) drop-shadow(2px 2px 4px var(--black));
 }
 
 .input-range::-moz-range-thumb{
@@ -321,15 +327,6 @@
   cursor: pointer;
 }
 
-/*  .input-range::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent; 
-  border-color: transparent;
-  color: transparent; 
-}  */
-
-
 .input-range::-webkit-slider-runnable-track {
   width: 100%;
   height: 3vw;
@@ -340,20 +337,22 @@
 
 .input-range:focus {  
   outline: none;
-   /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
  }
 
-.input-range::-webkit-slider-runnable-track:focus,
-.input-range::-webkit-slider-runnable-track:focus-within,
-.input-range::-webkit-slider-runnable-track:focus-visible
-{
+.input-range:focus::-webkit-slider-runnable-track{
   border: 1px solid var(--color2);
-  outline: 1px solid var(--color2);
 }
+
+/*  .input-range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent; 
+}  */
 
 /* Falta completar para outros navegadores
 Gostaria que o track ficasse com uma cor diferente antes e deois do thumb;
-Entender e manipular o focus
  */
 
 
