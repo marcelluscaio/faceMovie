@@ -207,6 +207,9 @@ function displayMovieDetails(details){
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0.335216C2.72815 0.119374 2.38794 8.56214e-05 2.03522 8.5624e-05C1.62805 8.5627e-05 1.23756 0.159038 0.949655 0.441975C0.661746 0.724912 0.5 1.10866 0.5 1.50879C0.5 1.90892 0.661746 2.29267 0.949655 2.57561L1.24546 2.86631L3 4.59054V0.335216Z" fill="#BF0637"/>
                 </svg>`
         }
+
+        const bg = document.querySelector(".input-range");
+        bg.style.backgroundSize = `${e.target.value * 10}% 100%`
     });
 
 

@@ -41,16 +41,16 @@ Search, add, and share your favorite movies
 - [X] Style range
 - [X] Control range focus
 - [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
-- [ ] Range styling to all browser
-- [ ] Range with different color before and after thumb
+- [X] Range with different color before and after thumb (Contributed: Estevam Morais)
+- [ ] Range styling to all browsers
 - [ ] Make number appear on range
 - [ ] Adapt to desktop
-- [ ] Crete 404 error
-- [ ] Complete Readme
-- [ ] Get information from NY Times API
 - [ ] Create tooltip to show NY times information on hover
 - [ ] Make filter button work
+- [ ] Crete 404 error
 - [ ] Make burger work
+- [ ] Complete Readme
+- [ ] Get information from NY Times API
 - [ ] Create login
 - [ ] Use Firebase to store information
 

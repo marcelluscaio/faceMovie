@@ -275,10 +275,15 @@
 
 .input-range{
     width: 80%;
-    margin-bottom: .25em;
+    margin-bottom: 3vw;
     -webkit-appearance: none;
     appearance: none;
     background: transparent;
+    background-size: 0 100%;
+}
+
+.input-range::-webkit-slider-container{
+    background-size: inherit;
 }
 
 .input-range::-webkit-slider-thumb{
@@ -295,7 +300,7 @@
   background-size: contain;
   cursor: pointer;
   margin-top: -1%;
-  filter: brightness(1) drop-shadow(2px 2px 4px var(--black));
+  filter: brightness(1) drop-shadow(2px 2px 4px var(--black));  
 }
 
 .dark .input-range::-webkit-slider-thumb{
@@ -333,7 +338,12 @@
   border-radius: 1.5vw;
   cursor: pointer;
   background-color: var(--color1);
+  background-image: linear-gradient(var(--color2) 0, var(--color1) 200%);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-blend-mode: multiply;
 }
+
 
 .input-range:focus {  
   outline: none;
