@@ -42,6 +42,7 @@ Search, add, and share your favorite movies
 - [X] Control range focus
 - [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
 - [X] Range with different color before and after thumb (Contributed: Estevam Morais)
+- [X] Light dark mode Label
 - [ ] Range styling to all browsers
 - [ ] Adapt to desktop
 - [ ] Create tooltip to show NY times information on hover
