@@ -68,7 +68,6 @@ function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list__item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
-            // console.log(movie.dataset.id);
             searchList.classList.add('hide-search-list');
             movieSearchBox.value = "";
             const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=72a1c783`);
@@ -79,11 +78,7 @@ function loadMovieDetails(){
 }
 
 async function displayMovieDetails(details){
-    console.log(details.Title);
-    console.log(typeof details.Title);
     await getCritic(details.Title);
-    console.log(criticLink);
-    console.log(typeof criticLink);
     resultGrid.classList.remove("hide");
     fade.style.pointerEvents = 'none';
     resultGrid.scroll(0, 0);
