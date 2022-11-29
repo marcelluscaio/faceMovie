@@ -50,7 +50,7 @@ Search, add, and share your favorite movies
 - [ ] Crete 404 error
 - [ ] Make burger work
 - [ ] Complete Readme
-- [ ] Get information from NY Times API
+- [X] Get information from NY Times API
 - [ ] Create login
 - [ ] Use Firebase to store information
 

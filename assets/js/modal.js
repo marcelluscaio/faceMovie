@@ -73,13 +73,17 @@ function loadMovieDetails(){
             movieSearchBox.value = "";
             const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=72a1c783`);
             const movieDetails = await result.json();
-            // console.log(movieDetails);
             displayMovieDetails(movieDetails);
         });
     });
 }
 
-function displayMovieDetails(details){
+async function displayMovieDetails(details){
+    console.log(details.Title);
+    console.log(typeof details.Title);
+    await getCritic(details.Title);
+    console.log(criticLink);
+    console.log(typeof criticLink);
     resultGrid.classList.remove("hide");
     fade.style.pointerEvents = 'none';
     resultGrid.scroll(0, 0);
@@ -88,12 +92,13 @@ function displayMovieDetails(details){
         <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
     </div>
     <div class = "result-grid__movie-info">
-        <h3 class = "movie-title">${details.Title}</h3>
+        <h3 class = "movie-title"> ${details.Title}</h3>
         <ul class = "movie-misc-info">
             <li class = "year"><b>Year:</b> ${details.Year}</li>
             <li class = "rated"><b>Ratings:</b> ${details.Rated}</li>
             <li class = "released"><b>Released:</b> ${details.Released}</li>
         </ul>
+        <p class = "link"><b>Link:</b> ${criticLink}</p>
         <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
         <p class = "director"><b>Director:</b> ${details.Director}</p>
         <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
@@ -243,3 +248,5 @@ window.addEventListener('click', (event) => {
         searchList.classList.add('hide-search-list');
     }
 }); */
+
+
