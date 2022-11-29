@@ -93,7 +93,6 @@ async function displayMovieDetails(details){
             <li class = "rated"><b>Ratings:</b> ${details.Rated}</li>
             <li class = "released"><b>Released:</b> ${details.Released}</li>
         </ul>
-        <p class = "link"><b>Link:</b> ${criticLink}</p>
         <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
         <p class = "director"><b>Director:</b> ${details.Director}</p>
         <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
@@ -101,7 +100,8 @@ async function displayMovieDetails(details){
         <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-    </div>
+        <p class = "link"><b>Link:</b><a href=${criticLink}> Go to the NYT Movie Review<a></p>
+        </div>
     `;
     let form = document.createElement("form");
     form.classList.add("form");
