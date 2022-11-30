@@ -1,6 +1,71 @@
-faceMovie is a social network for movie lovers.
 
-Search, add, and share your favorite movies
+![Logo](./assets/images/logo.png)
+
+
+# FaceMovie
+
+FaceMovie is a social network for movie lovers.
+
+Search, add, review and share your favorite movies!
+
+## Badges
+
+![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+
+![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+
+## Features
+
+- Light/dark mode toggle
+- Fullscreen mode
+- Cross platform
+
+## Color Reference
+
+| Light Colors             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Color 1| ![#c2929d](https://via.placeholder.com/10/0a192f?text=+) #c2929d |
+| Color 2| ![#bF0637](https://via.placeholder.com/10/f8f8f8?text=+) #BF0637|
+| Color 3| ![#D9843b](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
+| Black | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0   |
+| Black Transparent | ![#223C3F](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+
+
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run deploy
+```
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## References
+
+https://www.omdbapi.com/
+
+https://developer.nytimes.com/
+
+## Contributing
+
+Contributions are always welcome!
+
+Please read the contribution guidelines first.
+
+
+## Authors
+
+- [@Caio Cabral](https://github.com/marcelluscaio)
+- [@Sayonara Crestani](https://github.com/screstani)
+
 
 ### Planning/Timeline
 - [X] Look up references (Caio and Sayonara)
