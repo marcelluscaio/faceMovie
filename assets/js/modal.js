@@ -78,7 +78,7 @@ function loadMovieDetails(){
 }
 
 async function displayMovieDetails(details){
-    await getCritic(details.Title);
+    await getReview(details.Title);
     resultGrid.classList.remove("hide");
     fade.style.pointerEvents = 'none';
     resultGrid.scroll(0, 0);
@@ -100,7 +100,7 @@ async function displayMovieDetails(details){
         <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-        <p class = "link"><b>Link:</b><a href=${criticLink}> Go to the NYT Movie Review<a></p>
+        <p class = "link"><b>Link:</b><a href=${reviewLink}> Go to the NYT Movie Review<a></p>
         </div>
     `;
     let form = document.createElement("form");
@@ -240,5 +240,3 @@ window.addEventListener('click', (event) => {
         searchList.classList.add('hide-search-list');
     }
 }); */
-
-
