@@ -102,10 +102,11 @@ Please read the contribution guidelines first.
 - [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
 - [X] Range with different color before and after thumb (Contributed: Estevam Morais)
 - [X] Light dark mode Label
-- [ ] Deixar o rodape aparecer quando nao tiver nenhum filme
+- [X] Deixar o rodape aparecer quando nao tiver nenhum filme
 - [ ] Estilizar scrollbar e input range para todos os browsers
 - [ ] Range styling to all browsers
 - [ ] Adapt to desktop
+- [ ] Style ny times link call
 - [X] Get information from NY Times API
 - [ ] Make filter button work
 - [ ] Make burger work

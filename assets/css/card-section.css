@@ -1,5 +1,4 @@
 .card-section{
-   /* min-height: calc(100vh - 11vh); */
    display: flex;
    flex-wrap: wrap;
    gap: 5vw;

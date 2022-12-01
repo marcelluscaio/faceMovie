@@ -304,8 +304,8 @@
 }
 
 .dark .input-range::-webkit-slider-thumb{
-    mix-blend-mode: luminosity;
-    filter: brightness(4) drop-shadow(2px 2px 4px var(--black));
+    
+    filter: brightness(5) hue-rotate(240deg) grayscale(0.8)  drop-shadow(2px 2px 4px var(--black));
 }
 
 .input-range::-moz-range-thumb{

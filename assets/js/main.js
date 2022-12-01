@@ -13,14 +13,13 @@ window.addEventListener("resize", resizeBurger);
 const cardSection2 = document.querySelector(".card-section"); //figure out how not to duplicate cardSection with modal
 const userField = document.querySelector(".user-field");
 const footer = document.querySelector("footer");
-const totalHeight = window.innerHeight;
 function setCardSectionHeight(){
    const headerHeight = header.offsetHeight;
    const userFieldHeight = userField.offsetHeight;
    const footerHeight = footer.offsetHeight;
    const totalHeight = window.innerHeight;
-   cardSection2.style.minHeight = `${totalHeight - headerHeight - userFieldHeight - footerHeight +1}px`; //I put +1 to avoid a white line below
-   console.log(`${totalHeight - headerHeight - userFieldHeight - footerHeight}px`)
+   cardSection2.style.minHeight = `${totalHeight - headerHeight - userFieldHeight - footerHeight +1}px`;
+   //I put +1 to avoid a white line below. Is there another way?
 }
 
 window.addEventListener("load", setCardSectionHeight);
