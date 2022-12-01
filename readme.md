@@ -28,12 +28,15 @@ Search, add, review and share your favorite movies!
 
 ## Screenshots
 
+<span><img src="https://user-images.githubusercontent.com/68524965/205084253-caa05674-4502-42e2-aa37-108157ba7652.png" width="230px" height="396px"></span>
+<img src="https://user-images.githubusercontent.com/68524965/205084284-c19c570e-2264-4639-9b14-7da141ebf6be.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205084293-a9679678-547d-467f-8ae0-6ba52bd1648c.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205084306-99569748-12d9-440d-a546-7caf34cd82e4.png" width="230px" height="396px">
 
 
 ## Deployment
 
-Check this project <a href="https://www.google.com">here</a>
-
+This project deployed with Vercel. Check <a href="https://www.google.com">here</a>.
 
 ## Screenshots
 
