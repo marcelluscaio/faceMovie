@@ -1,5 +1,5 @@
 
-![Logo](./assets/images/logo.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/68524965/204993149-2701734e-9e36-4709-b208-5d212d83db7c.gif"></p>
 
 
 # FaceMovie
@@ -30,7 +30,7 @@ Search, add, review and share your favorite movies!
 | Color 1| ![#c2929d](https://via.placeholder.com/10/0a192f?text=+) #c2929d |
 | Color 2| ![#bF0637](https://via.placeholder.com/10/f8f8f8?text=+) #BF0637|
 | Color 3| ![#D9843b](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Black | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0   |
+| Black | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 | Black Transparent | ![#223C3F](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 
