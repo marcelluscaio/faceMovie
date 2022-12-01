@@ -77,6 +77,16 @@ svg > *{
    overflow: hidden;
 }
 
+::selection{
+   color: var(--color2);
+   background-color: var(--color3) ;
+}
+
+html{
+   scrollbar-color: var(--color1) var(--color2);
+   scrollbar-width: 2vw; /*Melhorar medida*/
+}
+
 ::-webkit-scrollbar{
     width: 2vw; /*Melhorar medida*/
     background-color: var(--color2);
@@ -90,9 +100,4 @@ svg > *{
     background-image: var(--gradient);
     outline: none;
     border-radius: 1vw;
-}
-
-::selection{
-   color: var(--color2);
-   background-color: var(--color3) ;
 }
