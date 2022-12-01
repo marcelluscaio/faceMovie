@@ -10,11 +10,7 @@ Search, add, review and share your favorite movies!
 
 ## Badges
 
-![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-
-![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 
 ## Features
@@ -27,20 +23,24 @@ Search, add, review and share your favorite movies!
 
 
 ## Screenshots
-
-<span><img src="https://user-images.githubusercontent.com/68524965/205084253-caa05674-4502-42e2-aa37-108157ba7652.png" width="230px" height="396px"></span>
-<img src="https://user-images.githubusercontent.com/68524965/205084284-c19c570e-2264-4639-9b14-7da141ebf6be.png" width="230px" height="396px">
+<p align="middle">
+<img src="https://user-images.githubusercontent.com/68524965/205084253-caa05674-4502-42e2-aa37-108157ba7652.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088299-9c48b9db-0f39-4a7a-9058-bdd0a48ef292.png" width="230px" height="396px">
 <img src="https://user-images.githubusercontent.com/68524965/205084293-a9679678-547d-467f-8ae0-6ba52bd1648c.png" width="230px" height="396px">
 <img src="https://user-images.githubusercontent.com/68524965/205084306-99569748-12d9-440d-a546-7caf34cd82e4.png" width="230px" height="396px">
+</p>
+
+<p align="middle">
+<img src="https://user-images.githubusercontent.com/68524965/205088307-3dcef86a-713c-4c87-9c4e-3865dc0cbe1c.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088316-428aebfb-441e-4904-9861-5665b1cc9b90.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088326-a52c6dda-77b7-4e9d-a72e-26a3abebaf33.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088349-5ceb6082-55d7-4cde-8fba-cff27c5edb3a.png" width="230px" height="396px">
+</p>
 
 
 ## Deployment
 
 This project deployed with Vercel. Check <a href="https://www.google.com">here</a>.
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
 ## References
@@ -52,7 +52,6 @@ https://developer.nytimes.com/
 ## Contributing
 
 Contributions are always welcome!
-
 Please read the contribution guidelines first.
 
 
