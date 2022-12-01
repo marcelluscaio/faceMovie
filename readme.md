@@ -5,8 +5,8 @@
 # FaceMovie
 
 FaceMovie is a social network for movie lovers.
-
 Search, add, review and share your favorite movies!
+
 
 ## Badges
 
@@ -19,9 +19,12 @@ Search, add, review and share your favorite movies!
 
 ## Features
 
-- Light/dark mode toggle
-- Fullscreen mode
-- Cross platform
+* Mobile First Responsive Web Design;
+* Light mode/dark mode toggle;
+* Modal window with a layer of transparency;
+* Search engine that works based on incomplete information;
+* OMDB API and NYT - Movie Reviews API.
+
 
 ## Color Reference
 
@@ -36,11 +39,7 @@ Search, add, review and share your favorite movies!
 
 ## Deployment
 
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+Check this project <a href="https://www.google.com">here</a>
 
 
 ## Screenshots
@@ -118,9 +117,3 @@ Please read the contribution guidelines first.
 - [ ] Create login
 - [ ] Use Firebase to store information
 
-
-### References
-
-https://www.omdbapi.com/
-
-https://developer.nytimes.com/
