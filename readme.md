@@ -104,7 +104,7 @@ Please read the contribution guidelines first.
 - [X] Light dark mode Label
 - [X] Deixar o rodape aparecer quando nao tiver nenhum filme
 - [X] Estilizar scrollbar para todos os browsers
-- [ ] Range styling to all browsers
+- [X] Range styling to all browsers
 - [ ] Adapt to desktop
 - [X] Get information from NY Times API
 - [ ] Make filter button work
