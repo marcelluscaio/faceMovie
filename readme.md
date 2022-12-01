@@ -49,7 +49,6 @@ Search, add, and share your favorite movies
 - [ ] Make filter button work
 - [ ] Crete 404 error
 - [ ] Make burger work
-- [ ] Complete Readme
 - [X] Get information from NY Times API
 - [ ] Create login
 - [ ] Use Firebase to store information
