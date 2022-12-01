@@ -106,9 +106,9 @@ Please read the contribution guidelines first.
 - [ ] Estilizar scrollbar e input range para todos os browsers
 - [ ] Range styling to all browsers
 - [ ] Adapt to desktop
+- [X] Get information from NY Times API
 - [ ] Make filter button work
 - [ ] Make burger work
-- [X] Get information from NY Times API
 - [ ] Crete 404 error
 - [ ] Create tooltip to show NY times information on hover
 - [ ] Create login
