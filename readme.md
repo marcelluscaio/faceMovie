@@ -1,6 +1,65 @@
-faceMovie is a social network for movie lovers.
 
-Search, add, and share your favorite movies
+<p align="center"><img src="https://user-images.githubusercontent.com/68524965/204993149-2701734e-9e36-4709-b208-5d212d83db7c.gif"></p>
+
+
+# FaceMovie
+
+FaceMovie is a social network for movie lovers.
+Search, add, review and share your favorite movies!
+
+
+## Badges
+
+![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+
+
+## Features
+
+* Mobile First Responsive Web Design;
+* Light mode/dark mode toggle;
+* Modal window with a layer of transparency;
+* Search engine that works based on incomplete information;
+* OMDB API and NYT - Movie Reviews API.
+
+
+## Screenshots
+<p align="middle">
+<img src="https://user-images.githubusercontent.com/68524965/205084253-caa05674-4502-42e2-aa37-108157ba7652.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088299-9c48b9db-0f39-4a7a-9058-bdd0a48ef292.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205084293-a9679678-547d-467f-8ae0-6ba52bd1648c.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205084306-99569748-12d9-440d-a546-7caf34cd82e4.png" width="230px" height="396px">
+</p>
+
+<p align="middle">
+<img src="https://user-images.githubusercontent.com/68524965/205088307-3dcef86a-713c-4c87-9c4e-3865dc0cbe1c.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088316-428aebfb-441e-4904-9861-5665b1cc9b90.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088326-a52c6dda-77b7-4e9d-a72e-26a3abebaf33.png" width="230px" height="396px">
+<img src="https://user-images.githubusercontent.com/68524965/205088349-5ceb6082-55d7-4cde-8fba-cff27c5edb3a.png" width="230px" height="396px">
+</p>
+
+
+## Deployment
+
+This project deployed with Vercel. Check <a href="https://www.google.com">here</a>.
+
+
+## References
+
+https://www.omdbapi.com/
+
+https://developer.nytimes.com/
+
+## Contributing
+
+Contributions are always welcome!
+Please read the contribution guidelines first.
+
+
+## Authors
+
+- [@Caio Cabral](https://github.com/marcelluscaio)
+- [@Sayonara Crestani](https://github.com/screstani)
+
 
 ### Planning/Timeline
 - [X] Look up references (Caio and Sayonara)
@@ -53,9 +112,3 @@ Search, add, and share your favorite movies
 - [ ] Create login
 - [ ] Use Firebase to store information
 
-
-### References
-
-https://www.omdbapi.com/
-
-https://developer.nytimes.com/

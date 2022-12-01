@@ -68,7 +68,6 @@ function loadMovieDetails(){
     const searchListMovies = searchList.querySelectorAll('.search-list__item');
     searchListMovies.forEach(movie => {
         movie.addEventListener('click', async () => {
-            // console.log(movie.dataset.id);
             searchList.classList.add('hide-search-list');
             movieSearchBox.value = "";
             const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=72a1c783`);
@@ -79,11 +78,7 @@ function loadMovieDetails(){
 }
 
 async function displayMovieDetails(details){
-    console.log(details.Title);
-    console.log(typeof details.Title);
-    await getCritic(details.Title);
-    console.log(criticLink);
-    console.log(typeof criticLink);
+    await getReview(details.Title);
     resultGrid.classList.remove("hide");
     fade.style.pointerEvents = 'none';
     resultGrid.scroll(0, 0);
@@ -98,7 +93,6 @@ async function displayMovieDetails(details){
             <li class = "rated"><b>Ratings:</b> ${details.Rated}</li>
             <li class = "released"><b>Released:</b> ${details.Released}</li>
         </ul>
-        <p class = "link"><b>Link:</b> ${criticLink}</p>
         <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
         <p class = "director"><b>Director:</b> ${details.Director}</p>
         <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
@@ -106,7 +100,8 @@ async function displayMovieDetails(details){
         <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-    </div>
+        <p class = "link"><b>Link:</b><a href=${reviewLink}> Go to the NYT Movie Review<a></p>
+        </div>
     `;
     let form = document.createElement("form");
     form.classList.add("form");
@@ -248,5 +243,3 @@ window.addEventListener('click', (event) => {
         searchList.classList.add('hide-search-list');
     }
 }); */
-
-
