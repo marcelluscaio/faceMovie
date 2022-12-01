@@ -26,15 +26,8 @@ Search, add, review and share your favorite movies!
 * OMDB API and NYT - Movie Reviews API.
 
 
-## Color Reference
+## Screenshots
 
-| Light Colors             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Color 1| ![#c2929d](https://via.placeholder.com/10/0a192f?text=+) #c2929d |
-| Color 2| ![#bF0637](https://via.placeholder.com/10/f8f8f8?text=+) #BF0637|
-| Color 3| ![#D9843b](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Black | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-| Black Transparent | ![#223C3F](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 
 ## Deployment
