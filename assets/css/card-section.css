@@ -13,8 +13,9 @@
 }
 
 .card__image{
-   width: 18.75vw;
-   height: calc(18.75vw * 3/2);
+   width: 40vw;
+   /* height: calc(40vw * 3/2); */
+   aspect-ratio: 2 / 3;
    border-radius: calc(18.75vw / 10);
    border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
    overflow: hidden;

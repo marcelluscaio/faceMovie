@@ -9,11 +9,11 @@
    --family-title: 'Sacramento', cursive;
    --family-text: 'Quicksand', sans-serif;
 
-   --size-tiny:clamp(.375rem, 1.2vw, .6rem);
-   --size-small:clamp(.5rem, 1.6vw, .8rem);
-   --size-medium:clamp(.625rem, 2vw, 1rem);
-   --size-large:clamp(.875rem, 3vw, 1.5rem);
-   --size-title:clamp(1.25rem, 4vw, 2rem);
+   --size-tiny:clamp(.75rem, 2vw, 3rem);
+   --size-small:clamp(1rem, 2.3vw, 3.5rem);
+   --size-medium:clamp(1.25rem, 2.9vw, 4rem);
+   --size-large:clamp(1.5rem, 3.5vw, 4.5rem);
+   --size-title:clamp(2rem, 4.2vw, 5.5rem);
 
    --color1: var(--color1-light);
    --color2: var(--color2-light);
