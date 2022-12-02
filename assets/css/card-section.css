@@ -1,6 +1,7 @@
 .card-section{
    display: flex;
    flex-wrap: wrap;
+   justify-content: space-evenly;
    gap: 5vw;
    align-content: flex-start;
    padding: 1em var(--side-spacing) 1em;
@@ -12,11 +13,19 @@
    flex: 0 1 min-content;
 }
 
+.card-section__card:last-of-type{
+   margin-right: auto;
+}
+
+.card-section__card:nth-of-type(2n){
+   margin-right: 0;
+}
+
 .card__image{
    width: 40vw;
    /* height: calc(40vw * 3/2); */
    aspect-ratio: 2 / 3;
-   border-radius: calc(18.75vw / 10);
+   border-radius: calc(40vw / 10);
    border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
    overflow: hidden;
    background-image: var(--gradient);
@@ -68,4 +77,27 @@
 .information__hearts img,
 .information__hearts > svg{
    height: 2vw;
+}
+
+@media screen and (min-width: 1000px){
+   .card-section{
+      gap: 3vw;
+   }
+   
+   .card__image{
+      width: 20vw;
+      border-radius: calc(20vw / 10);
+   }
+   
+   .card-section__card:nth-of-type(2n){
+      margin-right: unset;
+   }
+
+   .card-section__card:last-of-type{
+      margin-right: auto;
+   }
+
+   .card-section__card:nth-of-type(4n){
+      margin-right: 0;
+   }
 }
