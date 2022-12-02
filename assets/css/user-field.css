@@ -52,7 +52,7 @@
    position: relative;
    top: 50%;
    transform: translateY(-50%);
-   width: 9.5vw;
+   width: max(9.5vw, 40px);
 }
 
 .list__image > * {
@@ -75,6 +75,20 @@
    */
 }
 
+.mode-switch-container{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   gap: 1vw;
+
+   position: absolute;
+   top: calc(1em + (var(--size-medium) / 2));
+   right: var(--side-spacing);
+
+   height: min(6vw, 120px);
+
+}
+
 .checkbox{
    position: absolute;
    height: 0;
@@ -86,14 +100,14 @@
 .switch{
    display: flex;
    align-items: center;
-   position: absolute;
+   /* position: absolute;
    top: 3vw;
-   right: var(--side-spacing);
+   right: var(--side-spacing); */
    background-color: var(--color1);
 
    border-radius: 3vw;
-   width: 12vw;
-   height: 6vw;
+   width: min(12vw, 270px);
+   height: min(6vw, 135px);
 }
 
 .slider{
@@ -102,25 +116,25 @@
    background-color: var(--color2);
    position: relative;
    left: 5%;
-   width: 4vw;
-   height: 4vw;
+   width: min(4vw, 90px);
+   height: min(4vw, 90px);
    transition: left .5s ease, background-color 1s ease;
 }
 
 .checkbox:checked ~ .switch > .slider{
-  left: calc(95% - 4vw);
+  left: calc(95% - min(4vw, 90px));
 }
 
 .switch-label{
    background-color: transparent; 
-   position: absolute;
+/*    position: absolute;
+   top: 4.5vw;
+   right: calc(var(--side-spacing) + 12vw + .75em); */
    display: flex;
-   top: 4.5vw; /*Vai ter que mudar*/
-   right: calc(var(--side-spacing) + 12vw + .75em);
    overflow: hidden;
    height: var(--size-medium);
    gap: 0.25em;
-   font-size: var(--size-medium);
+   font-size: var(--size-small);
 }
 
 .switch-label__type{
@@ -131,7 +145,7 @@
 }
 
 .dark .switch-label__type{
-   --translate: calc(-1 * var(--size-medium));
+   --translate: calc(-1 * var(--size-small));
    transform: translateY(var(--translate));
 }
 
