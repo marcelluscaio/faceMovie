@@ -31,8 +31,6 @@
     border: min(.75vw, 10px) solid var(--color3);
 }
 
-
-
 .modal__header {
    display: flex;
    justify-content: space-between;

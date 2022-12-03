@@ -1,5 +1,5 @@
 .user-field{
-   padding: 1em var(--side-spacing) 0;
+   padding: calc(1em + 1vw) var(--side-spacing) 0;
    position: relative;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .user-field__controls{
-   padding-top: .5em;
+   padding-top: calc(.5em + .5vw);
    border-bottom: min(.5vw, 8px) solid var(--color3); /*Can I make this variable?*/
 }
 
@@ -82,7 +82,7 @@
    gap: 1vw;
 
    position: absolute;
-   top: calc(1em + (var(--size-medium) / 2));
+   top: calc(1em + 1vw + (var(--size-medium) / 2));
    right: var(--side-spacing);
 
    height: min(6vw, 120px);

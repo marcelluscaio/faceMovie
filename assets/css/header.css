@@ -1,5 +1,5 @@
 .header{
-   height: calc(9vh + 3vw);
+   height: calc(6vh + 6vw);
    background-color: var(--color1);
    display: flex;
    justify-content: space-between;
@@ -13,6 +13,10 @@
    align-items: center;
 }
 
+.header__logo{
+   gap: 1vw;
+}
+
 .header__icons{
    gap: 5vw;
 }
@@ -20,8 +24,11 @@
 .logo__text{
    font-family: var(--family-title);
    font-size: var(--size-title);
+   font-weight: bold;
    color: var(--color2);
+   display: none;
 }
+
 
 .logo__image,
 .icons__icon{
@@ -46,4 +53,10 @@
    border-radius: 10px; /*Can I make this variable?*/
    width: 70%;
    margin: 0 auto;  
+}
+
+@media screen and (min-width: 750px){
+   .logo__text{
+      display: inline-block;
+   }
 }

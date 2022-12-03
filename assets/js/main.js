@@ -18,7 +18,7 @@ function setCardSectionHeight(){
    const userFieldHeight = userField.offsetHeight;
    const footerHeight = footer.offsetHeight;
    const totalHeight = window.innerHeight;
-   cardSection2.style.minHeight = `${totalHeight - headerHeight - userFieldHeight - footerHeight +1}px`;
+   cardSection2.style.minHeight = `max(20vh, ${totalHeight - headerHeight - userFieldHeight - footerHeight +1}px)`;
    //I put +1 to avoid a white line below. Is there another way?
 }
 
