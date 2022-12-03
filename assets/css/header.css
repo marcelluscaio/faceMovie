@@ -1,5 +1,5 @@
 .header{
-   height: 11vh;
+   height: calc(9vh + 3vw);
    background-color: var(--color1);
    display: flex;
    justify-content: space-between;

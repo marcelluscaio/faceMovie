@@ -107,7 +107,8 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 - [X] Deixar o rodape aparecer quando nao tiver nenhum filme
 - [X] Estilizar scrollbar para todos os browsers
 - [X] Range styling to all browsers
-- [ ] Adapt to desktop
+- [ ] Adapt to desktop (Header icons, modal)
+- [ ] Create modal to futures features
 - [X] Get information from NY Times API
 - [ ] Make filter button work
 - [ ] Make burger work
