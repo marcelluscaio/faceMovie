@@ -4,7 +4,7 @@
    justify-content: space-evenly;
    gap: 5vw;
    align-content: flex-start;
-   padding: 1em var(--side-spacing) 1em;
+   padding: calc(2em + 1vw) var(--side-spacing);
 }
 
 .card-section__card{
