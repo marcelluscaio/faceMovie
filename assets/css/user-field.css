@@ -85,7 +85,7 @@
    top: calc(1em + 1vw + (var(--size-medium) / 2));
    right: var(--side-spacing);
 
-   height: min(5vw, 135px);
+   height: min(5vw, 75px);
 
 }
 
@@ -106,8 +106,8 @@
    background-color: var(--color1);
 
    border-radius: 3vw;
-   width: min(10vw, 270px);
-   height: min(5vw, 135px);
+   width: min(10vw, 150px);
+   height: min(5vw, 75px);
 }
 
 .slider{
@@ -116,13 +116,13 @@
    background-color: var(--color2);
    position: relative;
    left: 5%;
-   width: min(3vw, 90px);
-   height: min(3vw, 90px);
+   width: min(3vw, 50px);
+   height: min(3vw, 50px);
    transition: left .5s ease, background-color 1s ease;
 }
 
 .checkbox:checked ~ .switch > .slider{
-  left: calc(95% - min(3vw, 90px));
+  left: calc(95% - min(3vw, 50px));
 }
 
 .switch-label{
