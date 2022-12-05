@@ -41,6 +41,10 @@ Search, add, review and share your favorite movies!
 
 Create your own list <a href="https://facemovie.vercel.app/" target="_blank">here</a>.
 
+## Authors
+
+- [@Caio Cabral](https://github.com/marcelluscaio)
+- [@Sayonara Crestani](https://github.com/screstani)
 
 ## APIs used
 
@@ -48,16 +52,6 @@ https://www.omdbapi.com/
 
 https://developer.nytimes.com/
 
-## Authors
-
-- [@Caio Cabral](https://github.com/marcelluscaio)
-- [@Sayonara Crestani](https://github.com/screstani)
-
-## Contributing
-
-Contributions are always welcome!
-
-Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 
 ## Still to come
 - [ ] Create modal to futures features
@@ -93,3 +87,9 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 - [X] Setting card sectiong height based on other element's size
 - [X] Scrollbar and select styling
 - [X] Total responsiveness
+
+## Contributing
+
+Contributions are always welcome!
+
+Please read the <a href='/contributing.md'>contribution guidelines</a> first.
