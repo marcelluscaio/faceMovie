@@ -18,7 +18,7 @@
 
 .modal{
     width: 85vw;
-    height: 85vh; 
+    height: 95vh; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,6 +29,8 @@
     padding: 1em;
     border-radius: calc(min(80vw, 75vh) / 10);
     border: min(.75vw, 10px) solid var(--color3);
+
+    overflow: hidden;
 }
 
 .modal__header {
@@ -111,7 +113,7 @@
 
 .modal__search-list{
     max-height: 75%;
-    width: calc(100% - (var(--size-large) * 2));
+    width: 75%;
     overflow-y: scroll;
 	display: block;
 	margin: 0 auto;
@@ -138,7 +140,7 @@
     box-shadow: inset 1px 1px 5px var(--color1), inset -1px -1px 5px var(--color1);
     color: var(--color2);
     border-bottom: 1px solid var(--color1); /*Make 1 px a fluid value?*/
-    width: calc(100% - (var(--size-large) * 2));
+    width: 95%;
     margin: 0 auto;
 	display: flex;
     flex-direction: column;
@@ -148,14 +150,14 @@
     padding: 0.5em;
 }
 
+.search-list__item:last-of-type{
+    margin-bottom: calc(15vw * 3/4);
+}
+
 .search-list__item:hover{
     transform: translateZ(2px) translateX(2px);
     box-shadow: inset 1px 1px 5px var(--color1), inset -1px -1px 5px var(--color1), 2px 2px 4px var(--black);
     transition: transform .5s ease, box-shadow .25s ease-in-out;    
-}
-
-.search-item__thumbnail{
-    flex: 1;
 }
 
 .search-item__thumbnail img{
@@ -167,19 +169,19 @@
 }
 
 .search-item__info{
-	flex: 1;
     font-weight: 600;
     text-align: center;
+    width: 100%;
 }
 
 .search-item__info h3{    
-    font-size: var(--size-large);
+    font-size: var(--size-medium);
     color: var(--color2);
     padding: 0 .25em;
 }
 
 .search-item__info p{
-    font-size: var(--size-medium);
+    font-size: var(--size-small);
     color: var(--color1);
     margin-top: .75em;
     
@@ -400,6 +402,11 @@
 @media screen and (min-width: 750px){
     .search-list__item{
         flex-direction: row;
+        align-items: center;
+    }
+
+    .search-item__thumbnail img{
+        width: 15vw;
     }
 }
 
