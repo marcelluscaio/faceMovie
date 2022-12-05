@@ -215,8 +215,6 @@ async function displayMovieDetails(details){
         const bg = document.querySelector(".input-range");
         bg.style.backgroundSize = `${e.target.value * 10}% 100%`
     });
-
-
     
     let rangeContainer = document.createElement('div');
     rangeContainer.classList.add('range-container');
@@ -236,14 +234,3 @@ async function displayMovieDetails(details){
 
     resultGrid.firstElementChild.appendChild(form);
 }
-
-
-/* //esse é o script do modal
-
-onclick="findMovies()" Usar click ou blur? Ha necessidade?
-
-window.addEventListener('click', (event) => {
-    if(event.target.className != "form-control"){
-        searchList.classList.add('hide-search-list');
-    }
-}); */
