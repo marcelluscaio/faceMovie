@@ -1,10 +1,9 @@
-
 <p align="center"><img src="https://user-images.githubusercontent.com/68524965/204993149-2701734e-9e36-4709-b208-5d212d83db7c.gif"></p>
 
 
 # FaceMovie
 
-FaceMovie is a social network for movie lovers.
+:film_strip::clapper: FaceMovie is a social network for movie lovers.
 Search, add, review and share your favorite movies!
 
 
@@ -15,11 +14,11 @@ Search, add, review and share your favorite movies!
 
 ## Features
 
-* Mobile First Responsive Web Design;
-* Light mode/dark mode toggle;
-* Modal window with a layer of transparency;
-* Search engine that works based on incomplete information;
-* OMDB API and NYT - Movie Reviews API.
+:paintbrush: Design and assets created in Figma;
+:iphone: Mobile-First Responsive Web Design;
+:sunny::crescent_moon: Light mode/dark mode toggle;
+:mag: Search engine that works based on incomplete information;
+:hammer_and_wrench: OMDB and NYT (Movie Reviews) APIs
 
 
 ## Screenshots
@@ -43,12 +42,16 @@ Search, add, review and share your favorite movies!
 Create your own list <a href="https://facemovie.vercel.app/" target="_blank">here</a>.
 
 
-## References
+## APIs used
 
 https://www.omdbapi.com/
 
 https://developer.nytimes.com/
 
+## Authors
+
+- [@Caio Cabral](https://github.com/marcelluscaio)
+- [@Sayonara Crestani](https://github.com/screstani)
 
 ## Contributing
 
@@ -56,69 +59,37 @@ Contributions are always welcome!
 
 Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 
-
-## Authors
-
-- [@Caio Cabral](https://github.com/marcelluscaio)
-- [@Sayonara Crestani](https://github.com/screstani)
-
-
-### Planning/Timeline
-- [X] Look up references
-- [X] Define color palette
-- [X] Define font family
-- [X] Create layout on Figma
-- [X] Create header
-- [X] Create user section
-- [X] Create Card section
-- [X] Create Footer section
-- [X] Create add film action
-- [X] Search engine (Get information from OMDB and NY Times. Search based on incomplete information)
-- [X] Create card section (Poster, title, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
-- [X] Light Mode Dark Mode
-- [X] Make Modal appear and disappear on click
-- [X] Make fade and modal transition
-- [X] Modal header styling
-- [X] Avoid body from scrolling
-- [X] Search input styling
-- [X] Modal body styling
-- [X] Styling of result grid 
-- [X] Style of close button from input search
-- [X] Use of mix-blend-mode to addapt to dark mode withou using new asset
-- [X] Bring modal back to index as div
-- [X] Modal Styling
-- [X] Make search engine work
-- [X] Create footer
-- [X] Create action of card addition
-- [X] Make result grid disappear
-- [X] Insert button to add movie to main page
-- [X] Treatment for image not found with mix blend mode
-- [X] Avoid pointer events in fade when grid result appears
-- [X] Style poster in grid resutl
-- [X] On reload grid result scrolls
-- [X] Style buttons in grid result
-- [X] Give possibility of user to grade the movie
-- [X] Organize form field into divs 
-- [X] Style range
-- [X] Control range focus
-- [X] Change Range's Thumb Heart color on dark mode using mix-blend-mode and brightness
-- [X] Range with different color before and after thumb (Contributed: Estevam Morais)
-- [X] Light dark mode Label
-- [X] Deixar o rodape aparecer quando nao tiver nenhum filme
-- [X] Estilizar scrollbar para todos os browsers
-- [X] Range styling to all browsers
-- [X] Adapt to desktop (Header icons, modal)
-- [X] Get information from NY Times API
-
 ### Still to come
 - [ ] Create modal to futures features
 - [ ] Make filter button work
 - [ ] Make burger work
 - [ ] Crete 404 error
-- [ ] Create tooltip to show NY times information on hover
 - [ ] Create login
 - [ ] Use Firebase to store information
 - [ ] User gives his own review (limit of characters)
 - [ ] User review appears on tooltip
 - [ ] Make OMDB fetch independent from NYTimes 
 
+### Planning/Timeline
+- [X] Create layout on Figma
+- [X] Create page structure
+- [X] Create add film action
+- [X] Get information from OMDB API
+- [X] Get information from NY Times API
+- [X] Create search engine
+- [X] Implement Light/Dark Mode
+- [X] Create modal
+   - [x] Make Modal appear and disappear on click
+   - [X] Avoid body from scrolling
+- [X] Search input styling
+- [X] Use of mix-blend-mode to addapt to dark mode withou using new asset
+- [X] Create action of card addition
+- [X] Result modal styling
+   - [X] On reload grid result scrolls
+   - [X] Style buttons in grid result
+   - [X] Give possibility of user to grade the movie
+   - [X] Style range
+   - [X] Change Range's Thumb Heart color on dark mode using filter
+- [X] Setting card sectiong height based on other element's size
+- [X] Scrollbar and select styling
+- [X] Total responsiveness
