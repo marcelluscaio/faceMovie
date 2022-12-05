@@ -14,10 +14,10 @@ Search, add, review and share your favorite movies!
 
 ## Features
 
-:paintbrush: Design and assets created in Figma;
-:iphone: Mobile-First Responsive Web Design;
-:sunny::crescent_moon: Light mode/dark mode toggle;
-:mag: Search engine that works based on incomplete information;
+:paintbrush: Design and assets created in Figma; <br> 
+:iphone: Mobile-First Responsive Web Design; <br>
+:sunny::crescent_moon: Light mode/dark mode toggle; <br>
+:mag: Search engine that works based on incomplete information; <br>
 :hammer_and_wrench: OMDB and NYT (Movie Reviews) APIs
 
 
