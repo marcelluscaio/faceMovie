@@ -86,26 +86,6 @@ async function displayMovieDetails(details){
     resultGrid.scroll(0, 0);
     resultGrid.innerHTML = `
     <div class="result-grid__container">
-    <div class = "result-grid__movie-poster">
-        <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
-    </div>
-    <div class = "result-grid__movie-info">
-        <h3 class = "movie-title"> ${details.Title}</h3>
-        <ul class = "movie-misc-info">
-            <li class = "year"><b>Year:</b> ${details.Year}</li>
-            <li class = "rated"><b>Ratings:</b> ${details.Rated}</li>
-            <li class = "released"><b>Released:</b> ${details.Released}</li>
-        </ul>
-        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
-        <p class = "director"><b>Director:</b> ${details.Director}</p>
-        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
-        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
-        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
-        <p class = "language"><b>Language:</b> ${details.Language}</p>
-        <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-        <p class= "link ${reviewLink === '' ? "noreview" : '' }"><b>New York Times Movie Review:</b><a target="_blank" href="${reviewLink}">${reviewLink === '' ? 'No Review Found' : 'Click here to read'}</a></p>
-    </div>
-    <div class="result-grid__container">
         <div class = "result-grid__movie-poster">
             <img src = "${(details.Poster != "N/A") ? details.Poster : "assets/images/image_not_found.png"}" alt = "movie poster">
         </div>
@@ -123,10 +103,9 @@ async function displayMovieDetails(details){
             <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
             <p class = "language"><b>Language:</b> ${details.Language}</p>
             <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-            <p class = "link"><b>Link:</b><a href=${reviewLink}> Go to the NYT Movie Review<a></p>
-            </div>
+            <p class= "link ${reviewLink === '' ? "noreview" : '' }"><b>New York Times Movie Review:</b><a target="_blank" href="${reviewLink}">${reviewLink === '' ? 'No Review Found' : 'Click here to read'}</a></p>
         </div>
-        </div>
+    </div>
     `;
     let form = document.createElement("form");
     form.classList.add("form");
