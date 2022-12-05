@@ -59,7 +59,7 @@ Contributions are always welcome!
 
 Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 
-### Still to come
+## Still to come
 - [ ] Create modal to futures features
 - [ ] Make filter button work
 - [ ] Make burger work
@@ -70,7 +70,7 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 - [ ] User review appears on tooltip
 - [ ] Make OMDB fetch independent from NYTimes 
 
-### Planning/Timeline
+## Planning/Timeline
 - [X] Create layout on Figma
 - [X] Create page structure
 - [X] Create add film action
