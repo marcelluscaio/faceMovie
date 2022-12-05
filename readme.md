@@ -84,7 +84,7 @@ https://developer.nytimes.com/
    - [X] Give possibility of user to grade the movie
    - [X] Style range
    - [X] Change Range's Thumb Heart color on dark mode using filter
-- [X] Setting card sectiong height based on other element's size
+- [X] Setting card section height based on other element's size
 - [X] Scrollbar and select styling
 - [X] Total responsiveness
 
