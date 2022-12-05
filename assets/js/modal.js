@@ -32,7 +32,7 @@ function findMovies(){
 }
 
 async function loadMovies(searchTerm){
-    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=72a1c783`;
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=11c3c70`;/*72a1c783*/
     const res = await fetch(`${URL}`);
     const data = await res.json();
     if(data.Response === "True"){
