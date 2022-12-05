@@ -23,10 +23,9 @@
 
 .card__image{
    width: 40vw;
-   /* height: calc(40vw * 3/2); */
    aspect-ratio: 2 / 3;
    border-radius: calc(40vw / 10);
-   border: 2px solid var(--color3); /*2px ou fazer calc(width / 30) ? */
+   border: 2px solid var(--color3); /*2px or calc(width / 30) ? */
    overflow: hidden;
    background-image: var(--gradient);
 }

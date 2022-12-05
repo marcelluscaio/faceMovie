@@ -60,12 +60,6 @@ svg > *{
    color 1s ease;
 }
 
-/* .hide{
-   display: none;
-} 
-Classe usada em outro lugar. Excluir?
-*/ 
-
 .dark{
    --color1: var(--color1-dark);
    --color2: var(--color2-dark);

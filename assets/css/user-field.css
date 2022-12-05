@@ -68,10 +68,6 @@
    margin-bottom: calc(-1 * min(.5vw, 8px));
    /*Gambiarra.
     Tem solucao mais elegante?
-
-   https://stackoverflow.com/questions/12692089/preventing-double-borders-in-css
-   
-   https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border#:~:text=To%20expand%20the%20bottom%20border,1%20on%20the%20hover%20state.
    */
 }
 
@@ -127,9 +123,6 @@
 
 .switch-label{
    background-color: transparent; 
-/*    position: absolute;
-   top: 4.5vw;
-   right: calc(var(--side-spacing) + 12vw + .75em); */
    display: flex;
    overflow: hidden;
    height: var(--size-medium);
