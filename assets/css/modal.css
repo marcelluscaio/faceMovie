@@ -255,6 +255,21 @@
     color: var(--color2);
 }
 
+.noreview a {
+    text-decoration: none;
+    cursor: none;
+    color: var(--contrast-transparent);
+ }
+
+.link a{
+    text-decoration: none;
+    color: var(--contrast-transparent);
+ }
+
+ .link a:hover {
+    text-decoration: underline;
+ }
+
 .form{
     display: flex;
     flex-direction: column;
