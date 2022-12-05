@@ -38,9 +38,9 @@ Search, add, review and share your favorite movies!
 </p>
 
 
-## Deployment
+## How to access
 
-Check it out <a href="https://www.google.com">here</a>.
+Create your own list <a href="https://vercel.com/marcelluscaio/face-movie" target="_blank">here</a>.
 
 
 ## References
@@ -64,17 +64,17 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 
 
 ### Planning/Timeline
-- [X] Look up references (Caio and Sayonara)
-- [X] Define color palette (Caio and Sayonara)
-- [X] Define font family (Caio and Sayonara)
-- [X] Create mobile layout on figma
+- [X] Look up references
+- [X] Define color palette
+- [X] Define font family
+- [X] Create layout on Figma
 - [X] Create header
 - [X] Create user section
 - [X] Create Card section
 - [X] Create Footer section
 - [X] Create add film action
 - [X] Search engine (Get information from OMDB and NY Times. Search based on incomplete information)
-- [X] Create card section (Poster, tite, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
+- [X] Create card section (Poster, title, director, year of release, and NY Times review. User can rank movies. Drag and drop?)
 - [X] Light Mode Dark Mode
 - [X] Make Modal appear and disappear on click
 - [X] Make fade and modal transition
@@ -107,9 +107,11 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 - [X] Deixar o rodape aparecer quando nao tiver nenhum filme
 - [X] Estilizar scrollbar para todos os browsers
 - [X] Range styling to all browsers
-- [ ] Adapt to desktop (Header icons, modal)
-- [ ] Create modal to futures features
+- [X] Adapt to desktop (Header icons, modal)
 - [X] Get information from NY Times API
+
+### Still to come
+- [ ] Create modal to futures features
 - [ ] Make filter button work
 - [ ] Make burger work
 - [ ] Crete 404 error
@@ -118,4 +120,5 @@ Please read the <a href='/contributing.md'>contribution guidelines</a> first.
 - [ ] Use Firebase to store information
 - [ ] User gives his own review (limit of characters)
 - [ ] User review appears on tooltip
+- [ ] Make OMDB fetch independent from NYTimes 
 
