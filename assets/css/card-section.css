@@ -80,7 +80,7 @@
 
 @media screen and (min-width: 1000px){
    .card-section{
-      gap: 3vw;
+      gap: 2vw;
    }
    
    .card__image{
