@@ -40,7 +40,7 @@ Search, add, review and share your favorite movies!
 
 ## How to access
 
-Create your own list <a href="https://vercel.com/marcelluscaio/face-movie" target="_blank">here</a>.
+Create your own list <a href="https://facemovie.vercel.app/" target="_blank">here</a>.
 
 
 ## References
