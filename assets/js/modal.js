@@ -100,8 +100,8 @@ async function displayMovieDetails(details){
         <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
         <p class = "language"><b>Language:</b> ${details.Language}</p>
         <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
-        <p class = "link"><b>Link:</b><a href=${reviewLink}> Go to the NYT Movie Review<a></p>
-        </div>
+        <p class = "link" class="${reviewLink === '#' ? 'noreview' : ''} "><b>New York Times Movie Review:</b><a target="_blank" href="${reviewLink}">${reviewLink === '#' ? 'No Review Found' : 'Click here to read'}<a></p>
+    </div>
     `;
     let form = document.createElement("form");
     form.classList.add("form");
