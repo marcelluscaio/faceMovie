@@ -6,7 +6,7 @@
 .user-field__user{
    display: flex;
    align-items: center;
-   gap: .5em;
+   gap: calc(.25em + 1vw);
 }
 
 .user__image{
@@ -36,7 +36,7 @@
 .controls__list{
    display: flex;
    font-size: var(--size-large);
-   gap: .5rem;   
+   gap: .5em;   
 }
 
 .list__text{
