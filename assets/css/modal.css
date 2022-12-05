@@ -196,8 +196,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: var(--gradient);
-    padding: 1em;
-    border-radius: calc(min(80vw, 75vh) / 10);
+    border-radius: calc(min(90vw, 95vh) / 10);
     border: min(.75vw, 10px) solid var(--color3);
     overflow: hidden;
 }
@@ -205,6 +204,7 @@
 .result-grid__container{
     height: 100%;
     overflow-y: scroll;
+    padding: calc(1vw + 1em) calc(1em + 2vw);
 }
 
 .result-grid__movie-poster{
@@ -212,7 +212,7 @@
 }
 
 .result-grid__movie-poster > img{
-    width: 75%;
+    width: min(75%, 60vh);
     aspect-ratio: 1;
     object-fit: cover;
     object-position: 0 25%;
