@@ -97,3 +97,7 @@ html{
     outline: none;
     border-radius: 1vw;
 }
+
+.coming-soon{
+   filter: grayscale(0.5);
+}

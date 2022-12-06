@@ -138,18 +138,21 @@
 }
 
 .dark .switch-label__type{
-   --translate: calc(-1 * var(--size-small));
+   --translate: calc(-1.2 * var(--size-small));
    transform: translateY(var(--translate));
 }
 
 .type__light{
+   line-height: 1.2;
    color: var(--black);
 }
 
 .type__dark{
+   line-height: 1.2;
    color: var(--white);
 }
 
 .switch-label__mode{
+   line-height: 1.2;
    color: var(--color2)
 }
