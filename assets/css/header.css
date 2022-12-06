@@ -34,6 +34,10 @@
    height: 40%;
 }
 
+.magnifier{
+   height: 100%;
+}
+
 .logo__image > *,
 .icons__icon > *{
    stroke: var(--color2);
