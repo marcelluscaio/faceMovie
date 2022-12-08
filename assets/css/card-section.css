@@ -38,7 +38,7 @@
 }
 
 .dark .card__image > img{
-   mix-blend-mode: soft-light;
+   mix-blend-mode: exclusion; /*Antes era dark-light*/
 }
 
 .card__information{

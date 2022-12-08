@@ -34,6 +34,11 @@
    height: 40%;
 }
 
+.icons__icon,
+.burger{
+   cursor: pointer;
+}
+
 .magnifier{
    height: 100%;
 }

@@ -96,14 +96,12 @@
 .switch{
    display: flex;
    align-items: center;
-   /* position: absolute;
-   top: 3vw;
-   right: var(--side-spacing); */
    background-color: var(--color1);
 
    border-radius: 3vw;
    width: min(10vw, 150px);
    height: min(5vw, 75px);
+   cursor: pointer;
 }
 
 .slider{
