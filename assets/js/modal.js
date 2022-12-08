@@ -25,7 +25,6 @@ function findMovies(){
     let searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length >= 3){
         searchList.classList.remove('hide-search-list');
-        /* console.log("saiu da debounce"); */
         loadMovies(searchTerm);
     } else {
         searchList.classList.add('hide-search-list');
@@ -37,7 +36,6 @@ function debounce(cb, delay=500) {
 
     return (...args) => {
         clearTimeout (timeout)
-        /* console.log("entrou na debounce"); */
         timeout = setTimeout(() => {
             cb(...args)
         }, delay)

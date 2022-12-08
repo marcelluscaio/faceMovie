@@ -54,6 +54,11 @@ https://developer.nytimes.com/
 
 
 ## Still to come
+- [ ] Align switch label with username
+- [ ] Put user controls into main/card section
+- [ ] Adjust mode switch to 4k
+- [ ] Adjust modal sizes
+- [ ] Set debounce to loadMovies instead of findMovies
 - [ ] Create modal to futures features
 - [ ] Make filter button work
 - [ ] Make burger work

@@ -102,36 +102,33 @@ html{
    filter: opacity(0.35) brightness(0.95);
 }
 
-.coming-soon-left::after{
+.coming-soon::after{
    content: 'Upcoming feature';
    color: var(--contrast-transparent);
    background-image: var(--gradient);
    position: absolute;
    font-size: var(--size-tiny);
    padding: .25em 1em; 
-   bottom: calc(-3.5 * var(--size-tiny));
-   left: 50%;
    filter: opacity(0);
    z-index: -1;
    text-align: center;
    line-height: 1.2;
    border-radius: calc(var(--size-tiny) * .6);
+
+}
+
+.coming-soon-left::after{
+   
+   top: calc(-3.5 * var(--size-tiny));
+   left: 50%;
+   
 }
 
 .coming-soon-right::after{
-   content: 'Upcoming feature';
-   color: var(--contrast-transparent);
-   background-image: var(--gradient);
-   position: absolute;
-   font-size: var(--size-tiny);
-   padding: .25em 1em; 
+
    bottom: calc(-3.5 * var(--size-tiny));
    right: 50%;
-   filter: opacity(0);
-   z-index: -1;
-   text-align: center;
-   line-height: 1.2;
-   border-radius: calc(var(--size-tiny) * .6);
+
 }
 
 .coming-soon:hover{

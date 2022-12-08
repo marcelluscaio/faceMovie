@@ -29,7 +29,7 @@
 }
 
 .user-field__controls{
-   padding-top: calc(.5em + .5vw);
+   padding-top: calc(2em + 1vw);
    border-bottom: min(.5vw, 8px) solid var(--color3); /*Can I make this variable?*/
 }
 
@@ -71,6 +71,10 @@
    */
 }
 
+:root{
+   --switch-size: min(5vw, 60px);
+}
+
 .mode-switch-container{
    display: flex;
    flex-direction: row-reverse;
@@ -81,7 +85,7 @@
    top: calc(1em + 1vw + (var(--size-medium) / 2));
    right: var(--side-spacing);
 
-   height: min(5vw, 75px);
+   height: var(--switch-size)
 
 }
 
@@ -98,9 +102,9 @@
    align-items: center;
    background-color: var(--color1);
 
-   border-radius: 3vw;
-   width: min(10vw, 150px);
-   height: min(5vw, 75px);
+   border-radius: calc(var(--switch-size) / 2);
+   width: calc(2 * var(--switch-size));
+   height: var(--switch-size);
    cursor: pointer;
 }
 
@@ -110,13 +114,13 @@
    background-color: var(--color2);
    position: relative;
    left: 5%;
-   width: min(3vw, 50px);
-   height: min(3vw, 50px);
+   width: calc(2 / 3 * var(--switch-size));
+   height: calc(2 / 3 * var(--switch-size));
    transition: left .5s ease, background-color 1s ease;
 }
 
 .checkbox:checked ~ .switch > .slider{
-  left: calc(95% - min(3vw, 50px));
+  left: calc(95% - (2 / 3 * var(--switch-size)));
 }
 
 .switch-label{
