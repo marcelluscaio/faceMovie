@@ -54,11 +54,10 @@ https://developer.nytimes.com/
 
 
 ## Still to come
+- [ ] Adjust search modal cancel and modal__header__title spacing from container border
 - [ ] Align switch label with username
 - [ ] Put user controls into main/card section
 - [ ] Adjust mode switch to 4k
-- [ ] Adjust modal sizes
-- [ ] Set debounce to loadMovies instead of findMovies
 - [ ] Create modal to futures features
 - [ ] Make filter button work
 - [ ] Make burger work
@@ -67,7 +66,8 @@ https://developer.nytimes.com/
 - [ ] Use Firebase to store information
 - [ ] User gives his own review (limit of characters)
 - [ ] User review appears on tooltip
-- [ ] Make OMDB fetch independent from NYTimes 
+- [ ] Make OMDB fetch independent from NYTimes
+- [ ] Try to fix Chrome bug with dimnesion set in JS
 
 ## Planning/Timeline
 - [X] Create layout on Figma
