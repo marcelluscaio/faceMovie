@@ -54,7 +54,8 @@ https://developer.nytimes.com/
 
 
 ## Still to come
-- [ ] Adjust search modal cancel and modal__header__title spacing from container border
+- [X] Adjust search modal header spacing
+- [X] Create animation for search list
 - [ ] Align switch label with username
 - [ ] Put user controls into main/card section
 - [ ] Adjust mode switch to 4k
@@ -68,6 +69,7 @@ https://developer.nytimes.com/
 - [ ] User review appears on tooltip
 - [ ] Make OMDB fetch independent from NYTimes
 - [ ] Try to fix Chrome bug with dimnesion set in JS
+- [ ] Check if Dark mode implementation abides by these rules (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
 
 ## Planning/Timeline
 - [X] Create layout on Figma

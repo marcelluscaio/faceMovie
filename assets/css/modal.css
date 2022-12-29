@@ -26,6 +26,7 @@
     background-image: var(--gradient);
     z-index: 2;
 
+    font-size: var(--size-medium);
     padding: 1em;
     border-radius: calc(min(80vw, 75vh) / 10);
     border: min(.75vw, 10px) solid var(--color3);
@@ -40,7 +41,7 @@
    font-size: var(--size-large);
    padding-bottom: .5em;
    border-bottom: min(.5vw, 8px) solid var(--color3); 
-   margin-bottom: 1rem;
+   margin-bottom: 1em;
 }
 
 .modal__header__title{
@@ -49,8 +50,8 @@
 }
 
 .modal__header__close{
-    width: 7vw;
-    height: 7vw;
+    width: var(--size-large);
+    height: var(--size-large);
     background-color: var(--color3);
     color: var(--color2);
     font-weight: 600;
@@ -118,6 +119,13 @@
 	display: block;
 	margin: 0 auto;
     perspective: 1000px;
+    animation: grow 1s ease-out forwards;
+}
+
+@keyframes grow{
+    from{
+        max-height: 0;
+    }
 }
 
 .modal__search-list::-webkit-scrollbar{
@@ -427,7 +435,7 @@
     display: none;
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 750px){    
     .search-list__item{
         flex-direction: row;
         align-items: center;
