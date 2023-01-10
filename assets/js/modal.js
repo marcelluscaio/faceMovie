@@ -7,6 +7,7 @@ const movieSearchBox = document.querySelector('#modal-search');
 const searchList = document.querySelector('#search-list');
 const resultGrid = document.querySelector('#result-grid');
 const cardSection = document.querySelector('.card-section');
+const login = document.querySelector('.user__image__bg');
 
 [openModalButton, closeModalButton, fade].forEach(element => {
     element.addEventListener("click", () => {
