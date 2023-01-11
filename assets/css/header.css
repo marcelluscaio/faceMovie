@@ -41,7 +41,7 @@
 
 .magnifier{
    height: 100%;
-}
+} /*This is here because of the tooltip creation and the div that was necessary*/
 
 .logo__image > *,
 .icons__icon > *{
@@ -53,6 +53,8 @@
    flex-direction: column;
    justify-content:center;
    gap: 25%;
+   width: calc((6vh + 6vw) * 0.4);
+   height: calc((6vh + 6vw) * 0.4);
 }
 
 .burger__line{   

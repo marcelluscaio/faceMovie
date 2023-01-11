@@ -1,13 +1,14 @@
 //Set burger width and height
 const header = document.querySelector(".header");
 const burger = document.querySelector(".burger");
-function resizeBurger() {
+/* function resizeBurger() {
    const headerHeight = header.offsetHeight;
    burger.style.height = `${headerHeight*0.4}px`;
    burger.style.width = `${headerHeight*0.4}px`;
 };
 window.addEventListener("load", resizeBurger);
-window.addEventListener("resize", resizeBurger);
+window.addEventListener("resize", resizeBurger); */
+//this can all be deleted?
 
 //Set card section height based on header, user section and footer height
 const cardSection2 = document.querySelector(".card-section"); //figure out how not to duplicate cardSection with modal
@@ -23,6 +24,7 @@ function setCardSectionHeight(){
 }
 
 window.addEventListener("load", setCardSectionHeight);
+window.addEventListener("load", () => {setTimeout(() => {cardSection2.style.transition = "0s"}, 5000)});
 window.addEventListener("resize", setCardSectionHeight);
 
 //Mode change trigger

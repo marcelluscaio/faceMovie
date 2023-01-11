@@ -7,7 +7,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="assets/css/style.css">   
+   <link rel="stylesheet" href="../css/style.css">   
    <title>faceMovie</title>
 </head>
 <body>
@@ -38,13 +38,11 @@
             <path d="M8.23737 1V15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M1 8H15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
          </svg>
-         <a href="assets/pages/login.html">
-            <div class="burger coming-soon coming-soon-right">
-               <div class="burger__line"></div>
-               <div class="burger__line"></div>
-               <div class="burger__line"></div>
-            </div>
-         </a>
+         <div class="burger coming-soon coming-soon-right">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+         </div>
          <div class="icons__icon coming-soon coming-soon-right">
             <svg class="icons__icon magnifier" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M6.48981 11.9796C9.52175 11.9796 11.9796 9.52175 11.9796 6.48981C11.9796 3.45787 9.52175 1 6.48981 1C3.45787 1 1 3.45787 1 6.48981C1 9.52175 3.45787 11.9796 6.48981 11.9796Z" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -53,23 +51,6 @@
          </div>
       </div>
    </header>
-   <section class="modal-section">
-      <div id="fade" class="fade hide"></div>
-      <div id="modal" class="modal hide">
-         <div class="modal__header">
-            <h2 class="modal__header__title">Search for movie</h2>
-            <button id="close-modal" class="modal__header__close">
-               <svg class="close__symbol" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.23737 1V15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M1 8H15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-               </svg>
-            </button>
-         </div>
-         <input class="modal__search" id="modal-search" type="search" placeholder="Movie title" >
-         <div class="modal__search-list hide-search-list" id="search-list"></div>
-      </div>
-      <div class="modal__result-grid hide" id="result-grid"></div>
-   </section>
    <section class="user-field">
       <div class="mode-switch-container">
          <input type="checkbox" id="checkbox" class="checkbox">
@@ -113,7 +94,12 @@
          </ul>
       </nav>
    </section>
-   <main class="card-section">
+   <main class="login">
+      <form>
+         <input type="text">
+         <input type="password">
+         <button>Login</button>
+      </form>
    </main>
    <footer>
       <div class="footer__creators">
@@ -140,9 +126,8 @@
       <h2 class="footer__title">faceMovie</h2>
       <p class="footer__copyright">&#169 All rights reserved</p>
    </footer>   
-    
-   <script src="assets/js/main.js"></script>
-   <script defer src="assets/js/modal.js"></script>
-   <script defer src="assets/js/nyt.js"></script>
+   <script src="../js/main.js"></script>
+   <script src="../js/modal.js"></script>
+   <script src="../js/nyt.js"></script>
 </body>
 </html>

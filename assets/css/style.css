@@ -44,6 +44,10 @@
    box-sizing: border-box;   
 }
 
+:is(html, body){
+   min-height: 100%;
+}
+
 body{
    background-image: var(--gradient);
    font-family: var(--family-text);

@@ -13,6 +13,10 @@ footer > * {
    margin-bottom: .5em;
 }
 
+.footer__creators > h2{
+   color: var(--color1)
+}
+
 .creator{
    margin-bottom: 1.25em;
 }
@@ -20,7 +24,7 @@ footer > * {
 .creator__link{
    position: relative;
    text-decoration: none;
-   color: inherit;
+   color: var(--color1); /*inherit caused delay in color change*/
 }
 
 .link__icon{

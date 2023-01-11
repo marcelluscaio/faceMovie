@@ -56,20 +56,28 @@ https://developer.nytimes.com/
 ## Still to come
 - [X] Adjust search modal header spacing
 - [X] Create animation for search list
-- [ ] Align switch label with username
-- [ ] Put user controls into main/card section
-- [ ] Adjust mode switch to 4k
-- [ ] Create modal to futures features
+
+Features
+- [ ] Learn how to use Firebase (User information + Movies)
+- [ ] Use Firebase to store information
+- [ ] Create login / Subscribe (Other page, not modal) (Login, Password, Confirm password, email)
+- [ ] Reestructure code to sanitize CSS and movie creation with OOP
+
 - [ ] Make filter button work
 - [ ] Make burger work
 - [ ] Crete 404 error
-- [ ] Create login
-- [ ] Use Firebase to store information
 - [ ] User gives his own review (limit of characters)
 - [ ] User review appears on tooltip
-- [ ] Make OMDB fetch independent from NYTimes
-- [ ] Try to fix Chrome bug with dimnesion set in JS
-- [ ] Check if Dark mode implementation abides by these rules (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/)
+
+Fix
+- [ ] Align switch label with username*
+- [ ] Put user controls into main/card section*
+- [ ] Try to fix Chrome bug with dimnesion set in JS*
+- [ ] Adjust mode switch to 4k
+- [ ] Make OMDB fetch independent from NYTimes (?)
+- [ ] Check if Dark mode implementation abides by these rules (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) *
+- [ ] Check contrast*
+- [ ] Should debounce be on Load movie instead of find movie? How to do it?
 
 ## Planning/Timeline
 - [X] Create layout on Figma
