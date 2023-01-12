@@ -60,7 +60,18 @@ https://developer.nytimes.com/
 Features
 - [ ] Learn how to use Firebase (User information + Movies)
 - [ ] Use Firebase to store information
-- [ ] Create login / Subscribe (Other page, not modal) (Login, Password, Confirm password, email)
+- [ ] Create login / Subscribe
+    (Other page, not modal)
+    (Login, Password, Confirm password, email)
+    https://dev.to/felix/floating-input-placeholders-with-html-css-ej4#:~:text=First%2C%20you%20have%20to%20put,the%20input%20in%20the%20HTML.&text=This%20will%20ensure%20that%20we,can%20use%20transform%3A%20translate()%20.
+   Criar login
+   https://www.youtube.com/watch?v=z5-9sN4i7xE&ab_channel=TurtleCode
+
+   Form responsivo
+   https://www.geeksforgeeks.org/design-a-responsive-sliding-login-registration-form-using-html-css-javascript/
+
+
+
 - [ ] Reestructure code to sanitize CSS and movie creation with OOP
 
 - [ ] Make filter button work
@@ -72,7 +83,7 @@ Features
 Fix
 - [ ] Align switch label with username*
 - [ ] Put user controls into main/card section*
-- [ ] Try to fix Chrome bug with dimnesion set in JS*
+- [X] Try to fix Chrome bug with dimension set in JS
 - [ ] Adjust mode switch to 4k
 - [ ] Make OMDB fetch independent from NYTimes (?)
 - [ ] Check if Dark mode implementation abides by these rules (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) *

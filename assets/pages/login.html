@@ -7,7 +7,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Sacramento&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/style.css">   
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/login.css">
    <title>faceMovie</title>
 </head>
 <body>
@@ -96,8 +97,24 @@
    </section>
    <main class="login">
       <form>
-         <input type="text">
-         <input type="password">
+         <header>
+            <h2>Login</h2>
+            <button>
+               <svg class="close__symbol" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.23737 1V15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1 8H15" stroke="#BF0637" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+            </button>
+         </header>
+         
+         <div>
+            <input type="text" id="email" name="email" placeholder=" ">
+            <label for="email">E-mail</label>
+         </div>
+         <div>
+            <input type="password" id="password" name="password" placeholder=" ">
+            <label for="password">Password</label>
+         </div>
          <button>Login</button>
       </form>
    </main>
@@ -125,9 +142,6 @@
       </div>
       <h2 class="footer__title">faceMovie</h2>
       <p class="footer__copyright">&#169 All rights reserved</p>
-   </footer>   
-   <script src="../js/main.js"></script>
-   <script src="../js/modal.js"></script>
-   <script src="../js/nyt.js"></script>
+   </footer>
 </body>
 </html>
