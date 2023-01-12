@@ -60,6 +60,8 @@ https://developer.nytimes.com/
 Features
 - [ ] Learn how to use Firebase (User information + Movies)
 - [ ] Use Firebase to store information
+
+-Create login using BEM. Things aer breaking
 - [ ] Create login / Subscribe
     (Other page, not modal)
     (Login, Password, Confirm password, email)

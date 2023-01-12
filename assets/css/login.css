@@ -110,7 +110,12 @@ body{
    transform: translate(calc(1em + 1vw), -250%);
 }
 
-form > button{
+form > div:has(button + button){
+   display: flex;
+   flex-direction: column;
+}
+
+form > div > button{
    font-family: var(--family-text);
    color: var(--white);
    border: none;

@@ -9,11 +9,11 @@
    --family-title: 'Sacramento', cursive;
    --family-text: 'Quicksand', sans-serif;
 
-   --size-tiny:clamp(.75rem, 2vw, 3rem);
-   --size-small:clamp(1rem, 2.3vw, 3.5rem);
-   --size-medium:clamp(1.25rem, 2.9vw, 4rem);
-   --size-large:clamp(1.5rem, 3.5vw, 4.5rem);
-   --size-title:clamp(2rem, 4.2vw, 5.5rem);
+   --size-tiny:clamp(.75rem, 1.8vw, 3rem);
+   --size-small:clamp(1rem, 2.1vw, 3.5rem);
+   --size-medium:clamp(1.25rem, 2.6vw, 4rem);
+   --size-large:clamp(1.5rem, 3.2vw, 4.5rem);
+   --size-title:clamp(2rem, 3.9vw, 5.5rem);
 
    --color1: var(--color1-light);
    --color2: var(--color2-light);
@@ -84,22 +84,25 @@ svg > *{
 
 html{
    scrollbar-color: var(--color1) var(--color2);
-   scrollbar-width: 2vw; /*Melhorar medida*/
+   scrollbar-width: 1vw; /*Melhorar medida*/
 }
 
 ::-webkit-scrollbar{
-    width: 2vw; /*Melhorar medida*/
-    background-color: var(--color2);
+    width: calc(.5em + .5vw); /*Melhorar medida*/
+    background: var(--color1);
 }
 
 ::-webkit-scrollbar-track{
-    box-shadow: inset 0 0 1px var(--contrast);
+   background-color: var(--color2);
+   border-radius: calc(.25em + .25vw);   
+   box-shadow: inset 0 0 2px var(--contrast);
+   margin-block: .25em;
 }
 
 ::-webkit-scrollbar-thumb{
     background-image: var(--gradient);
     outline: none;
-    border-radius: 1vw;
+    border-radius: calc(.25em + .25vw);
 }
 
 .coming-soon{
