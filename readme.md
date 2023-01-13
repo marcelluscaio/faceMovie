@@ -75,6 +75,7 @@ Features
 
 
 - [ ] Reestructure code to sanitize CSS and movie creation with OOP
+- [ ] Create loader to wiat for api call?
 
 - [ ] Make filter button work
 - [ ] Make burger work

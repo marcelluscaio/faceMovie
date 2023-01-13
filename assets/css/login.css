@@ -31,7 +31,7 @@ body{
    border: min(.75vw, 10px) solid var(--color3);
 }
 
-.login > form > header {
+.login__form__header {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -41,12 +41,12 @@ body{
    margin-bottom: calc(4vh + 2vw);
 }
 
-.login > form > header > h2{
+:is(.login__form__header, .login__form__create-account) > h2{
     color: var(--color2);
     font-weight: 600;    
 }
 
-.login > form > header > button{
+.login__form__header > button{
     width: var(--size-large);
     height: var(--size-large);
     background-color: var(--color3);
@@ -72,18 +72,18 @@ body{
     stroke: var(--color2)
 }
 
-.login > form > div{
+form > div:has(input + label){
    position: relative;
    margin-inline: auto;
    margin-bottom: calc(var(--size-large) + 3vh );
    width: min(90%, 40em);
 }
 
-.login > form > div:last-of-type{
+.login > form > div:has( + button){
    margin-bottom: 2vh;
 }
 
-.login > form > div > input{
+.login__form__field > input{
     padding: .5em 1em;
     font-size: var(--size-large);
     color: var(--color3);
@@ -95,7 +95,7 @@ body{
     border: min(.25vw, 4px) solid var(--color2);        
 }
 
-.login > form > div > label{
+.login__form__field > label{
    color: var(--black);
    opacity: 0.5;
    position: absolute;
@@ -105,17 +105,12 @@ body{
    transition: transform 1s ease;
 }
 
-.login > form > div > input:focus + label,
- .login > form > div > input:not(:placeholder-shown) + label{
+.login__form__field > input:focus + label,
+.login__form__field > input:not(:placeholder-shown) + label{
    transform: translate(calc(1em + 1vw), -250%);
 }
 
-form > div:has(button + button){
-   display: flex;
-   flex-direction: column;
-}
-
-form > div > button{
+form button:not(:has(svg)){
    font-family: var(--family-text);
    color: var(--white);
    border: none;
@@ -126,3 +121,22 @@ form > div > button{
    margin-inline: auto;
    display: block;
 }
+
+form > div + button{
+   margin-bottom: 2vh;;
+}
+
+.login__form__create-account{
+   text-align: right;
+}
+
+.login__form__create-account > a{
+   text-decoration: none;
+   color: var(--color2);
+   font-weight: 300;
+}
+
+.login__form__create-account > a > span{
+   font-weight: 600;
+}
+

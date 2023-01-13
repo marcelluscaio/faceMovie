@@ -96,8 +96,8 @@
       </nav>
    </section>
    <main class="login">
-      <form>
-         <header>
+      <form class="login__form">
+         <header class="login__form__header">
             <h2>Login</h2>
             <button>
                <svg class="close__symbol" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,19 +107,22 @@
             </button>
          </header>
          
-         <div>
+         <div class="login__form__field">
             <input type="text" id="email" name="email" placeholder=" ">
             <label for="email">E-mail</label>
          </div>
-         <div>
+         <div class="login__form__field">
             <input type="password" id="password" name="password" placeholder=" ">
             <label for="password">Password</label>
          </div>
-         <div>
-            <button>Login</button>
-            <button>Create account</button>
+         <button>Login</button>
+         
+         <div class="login__form__create-account">
+            <h2>Don't have an account?</h2>
+            <a href="#">Click <span>here</span> to sign up</button>
          </div>
       </form>
+      
    </main>
    <footer>
       <div class="footer__creators">
