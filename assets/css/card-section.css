@@ -5,7 +5,7 @@
    gap: 5vw;
    align-content: flex-start;
    padding: calc(2em + 1vw) var(--side-spacing);
-   min-height: 35vh;
+   min-height: 45vh;
    transition: min-height 3s linear;
 }
 
