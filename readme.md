@@ -92,6 +92,9 @@ Fix
 - [ ] Check if Dark mode implementation abides by these rules (https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) *
 - [ ] Check contrast*
 - [ ] Should debounce be on Load movie instead of find movie? How to do it?
+- [ ] Search with one-letter name doesnt work. Add director search?
+- [ ] problem with viewport units in mobile devices: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+- [ ] Bug: depois que um filme é selecionado com a crítica do NY Times, mesmo que o próximo não tenha, vai puxar a do anterior
 
 ## Planning/Timeline
 - [X] Create layout on Figma

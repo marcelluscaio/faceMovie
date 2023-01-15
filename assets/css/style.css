@@ -14,11 +14,11 @@
    --size-medium:clamp(1.25rem, 2.6vw, 4rem);
    --size-large:clamp(1.5rem, 3.2vw, 4.5rem);
    --size-title:clamp(2rem, 3.9vw, 5.5rem); */
-   --size-tiny: clamp(0.75rem, calc(0.43rem + 1.61vw), 3.00rem);
-   --size-small: clamp(0.94rem, calc(0.59rem + 1.74vw), 3.38rem);
-   --size-medium: clamp(1.17rem, calc(0.80rem + 1.88vw), 3.80rem);
-   --size-large: clamp(1.47rem, calc(1.06rem + 2.00vw), 4.27rem);
-   --size-title: clamp(1.83rem, calc(1.41rem + 2.12vw), 4.81rem);
+   --size-tiny: clamp(0.75rem, calc(0.68rem + 0.36vw), 1.25rem);
+   --size-small: clamp(0.94rem, calc(0.79rem + 0.74vw), 1.97rem);
+   --size-medium: clamp(1.17rem, calc(1.02rem + 0.75vw), 2.22rem);
+   --size-large: clamp(1.47rem, calc(1.32rem + 0.73vw), 2.49rem);
+   --size-title: clamp(1.83rem, calc(1.69rem + 0.69vw), 2.80rem);
 
    --color1: var(--color1-light);
    --color2: var(--color2-light);
