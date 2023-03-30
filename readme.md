@@ -61,9 +61,11 @@ Features
 - [ ] Learn how to use Firebase (User information + Movies)
 - [ ] Use Firebase to store information
 
--Create login using BEM. Things aer breaking
+- set filter according to height (in order to avoid space between ul and te line
 - [ ] Create login / Subscribe
+Mudar o login - centralizar e transformar o botao em ancora para a pagina inicial
     (Other page, not modal)
+    https://codepen.io/allisonching/pen/PoqNJvQ?editors=1010
     (Login, Password, Confirm password, email)
     https://dev.to/felix/floating-input-placeholders-with-html-css-ej4#:~:text=First%2C%20you%20have%20to%20put,the%20input%20in%20the%20HTML.&text=This%20will%20ensure%20that%20we,can%20use%20transform%3A%20translate()%20.
    Criar login
@@ -95,6 +97,7 @@ Fix
 - [ ] Search with one-letter name doesnt work. Add director search?
 - [ ] problem with viewport units in mobile devices: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 - [ ] Bug: depois que um filme é selecionado com a crítica do NY Times, mesmo que o próximo não tenha, vai puxar a do anterior
+- [ ] Set fallback to clamp font size
 
 ## Planning/Timeline
 - [X] Create layout on Figma

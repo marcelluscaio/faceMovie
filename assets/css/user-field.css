@@ -52,7 +52,7 @@
    position: relative;
    top: 50%;
    transform: translateY(-50%);
-   width: max(9.5vw, 40px);
+   width: max(8vw, 40px);
 }
 
 .list__image > * {
